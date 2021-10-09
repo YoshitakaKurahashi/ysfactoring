@@ -5,9 +5,7 @@
   padding: rem(40) 0;
   background-color: #F2F2F2;
 
-  @include mq(tab){
-    padding: rem(60) 0 rem(120);
-  }
+
 }
 
 .p-contact__wrapper{
@@ -23,9 +21,7 @@
   position: relative;
   
 
-  @include mq(tab){
-    max-width: rem(580);
-  }
+
 }
 
 .p-contact__img::before{
@@ -54,11 +50,7 @@
 }
 
 .p-contact__body{
-  @include mq(tab){
-    max-width: rem(440);
-    width: 100%;
-    margin-right: rem(80);
-  }
+
 }
 
 .p-contact-text{
@@ -128,9 +120,6 @@
 	letter-spacing: 0.04em;
 	line-height: 1.714285;
 
-	@include mq(tab){
-    font-size: rem(16);
-  }
 }
 
 .p-contact-check__item + span::before {
@@ -198,4 +187,64 @@
 .p-contact-button__submit::-moz-foucus-inner {
 	border: none;
 	padding: 0;
+}
+
+
+.p-sub-contact{
+  padding-bottom: rem(80);
+}
+
+.p-sub-contact__text{
+  font-size: rem(14);
+  line-height: 1.7;
+  letter-spacing: 4;
+
+
+}
+
+.l-inner.p-sub-contact__inner{
+
+}
+
+.p-sub-contact__contents{
+  margin-top: rem(50);
+}
+
+.p-sub-contact__content + 
+.p-sub-contact__content{
+  margin-top: rem(40);
+}
+
+.p-sub-contact__head{
+  display: flex;
+  align-items: center;
+
+}
+
+.p-sub-contact__title{
+  font-size: rem(16);
+  line-height: 1;
+  letter-spacing: 0.04em;
+  font-weight: bold;
+  margin-right: rem(10);
+}
+.p-sub-contact__required{
+  font-size: rem(12);
+  line-height: 1;
+  padding: rem(3) rem(5);
+  background-color: #333;
+  color: white;
+}
+
+.p-sub-contact__item{
+  margin-top: rem(10);
+
+}
+
+.p-sub-contact__content--button {
+  text-align: center;
+}
+
+.p-sub-contact__content--center{
+
 }
