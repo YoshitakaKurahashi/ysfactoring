@@ -8,7 +8,41 @@
   font-weight: bold;
   margin-bottom: rem(95);
   padding-top: rem(58);
-}
+
+  position: relative;
+  background-color: #fff;
+  border-bottom: 2px solid #525252;
+  padding: 10px;
+  width: 80%;
+  text-align: center;
+  }
+
+.appeal__title:before,
+.appeal__title:after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  }
+  
+  .appeal__title:before {
+  border: 12px solid transparent;
+  border-top: 12px solid #525252;
+  }
+  
+  .appeal__title:after {
+  border: solid 14px transparent;
+  border-top: solid 14px #fff;
+  margin-top: -5px;
+  }
+  
+  .appeal__title p {
+  margin: 0;
+  padding: 0;
+  }
+
+
 .appeal__title p{
   font-family: $second-font-family;
   font-size: rem(30);
@@ -17,6 +51,7 @@
 .appeal__title--strong{
   font-size: rem(63);
   color: $color-main-2;
+  margin: 0 rem(14) 0 rem(16)
 }
 
 

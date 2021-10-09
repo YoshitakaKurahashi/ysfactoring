@@ -136,6 +136,38 @@ select::-ms-expand {
   margin-bottom: 5.9375rem;
   padding-top: 58px;
   padding-top: 3.625rem;
+  position: relative;
+  background-color: #fff;
+  border-bottom: 2px solid #525252;
+  padding: 10px;
+  width: 80%;
+  text-align: center;
+}
+
+.appeal__title:before,
+.appeal__title:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.appeal__title:before {
+  border: 12px solid transparent;
+  border-top: 12px solid #525252;
+}
+
+.appeal__title:after {
+  border: solid 14px transparent;
+  border-top: solid 14px #fff;
+  margin-top: -5px;
+}
+
+.appeal__title p {
+  margin: 0;
+  padding: 0;
 }
 
 .appeal__title p {
@@ -148,6 +180,8 @@ select::-ms-expand {
   font-size: 63px;
   font-size: 3.9375rem;
   color: #47B45E;
+  margin: 0 14px 0 16px;
+  margin: 0 0.875rem 0 1rem;
 }
 
 .appeal__cards {
