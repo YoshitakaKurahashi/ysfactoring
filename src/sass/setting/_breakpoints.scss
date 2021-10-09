@@ -18,3 +18,4 @@ $mediaquerys: (
   inner: "screen and (max-width: #{map-get($breakpoints,'inner')}px)",
   xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
 );
+

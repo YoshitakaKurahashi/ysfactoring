@@ -1,52 +1,39 @@
 // header
-.header {
-    background: rgba(0,0,0,0);
-    height: 100px;
-    width: 100%;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
-    // @include mq('sp') {
-    // }
+.header__menu {
+  // height: 87px;
+  width: 100%;
+  background: #47B45E;
+  color: #fff;
+  z-index: 100;
+  // 途中から固定↓3行だけ
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+  text-align: center;
+  @include mq(md) {
+      display: none;
+  }
 }
 .header__inner {
-    display: flex;
-    align-items: center;
-    height: inherit;
+  // padding-top: 0;
+  // padding-bottom: 0;
 }
-.header__logo {
-    width: 75px;
-    margin-left: 5rem;
-    // @include mq('sp') {
-    //     width:35px;
-    //     margin-right: auto;
-    //     margin-left: 0;
-    // }
-    // img {
-    //     display: block;
-    // }
+.header__items {
+  display: flex;
+  justify-content: space-between;
+  padding: rem(33) rem(50) rem(34);
 }
-.header__nav {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    color: #FFF;
-}
-.header__nav-tel {
-}
-.header__nav-mail {
-    width: 150px;
-    background: url(../img/メールのアイコン.png) no-repeat center;
-    a {
-        text-decoration: none;
-    }
-}
-.header__nav-line {
-    width: 50px;
-    background: url(../img/LINE_APP_iOS.png) no-repeat;
-    a {
-        text-decoration: none;
-    }
+.header__item {
+  font-size: rem(20);
+  letter-spacing: 0px;
+  a {
+      text-decoration: none;
+      display: inline-block;
+      color: #fff;
+ 
+      &:hover {
+          opacity: 0.5;
+      }
+  }
 }

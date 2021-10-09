@@ -1,6 +1,6 @@
 /* FontFamily */
-$base-font-family: "";
-$second-font-family: "";
+$base-font-family: 'Lora', serif;
+$second-font-family: 'Noto Serif JP', serif;
 
 body {
   font-family: $base-font-family;
@@ -12,9 +12,5 @@ $normal: 400;
 $bold: 700;
 
 
-$color-main: #47B45E;
-$color-accent: #FF7F00;
-$color-text: #2E2E2E;
-$layout-width-inner:1440px;
 $font-en: ‘Lora’, sans-serif;
 $font-ja: ‘Noto Sans JP’,sans-serif;

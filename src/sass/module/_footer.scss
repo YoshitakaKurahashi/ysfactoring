@@ -1,0 +1,40 @@
+// header
+footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+}
+.footer__inner {
+  
+}
+
+.footer__menu--items{
+    display: flex;
+    justify-content: center;
+    background: #47B45E;
+    color: #fff;
+}
+
+.footer__menu--item{
+    font-size: rem(20);
+    letter-spacing: 0px;
+
+    padding: rem(22) rem(81) rem(23);
+    a {
+        text-decoration: none;
+        display: inline-block;
+        color: #fff;
+   
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+
+.footer__credit{
+    text-align: center;
+    font-size: rem(14);
+    padding-top: rem(7);
+    padding-bottom:rem(10);
+}
