@@ -1,0 +1,52 @@
+// header
+.header {
+    background: rgba(0,0,0,0);
+    height: 100px;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    // @include mq('sp') {
+    // }
+}
+.header__inner {
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+.header__logo {
+    width: 75px;
+    margin-left: 5rem;
+    // @include mq('sp') {
+    //     width:35px;
+    //     margin-right: auto;
+    //     margin-left: 0;
+    // }
+    // img {
+    //     display: block;
+    // }
+}
+.header__nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    color: #FFF;
+}
+.header__nav-tel {
+}
+.header__nav-mail {
+    width: 150px;
+    background: url(../img/メールのアイコン.png) no-repeat center;
+    a {
+        text-decoration: none;
+    }
+}
+.header__nav-line {
+    width: 50px;
+    background: url(../img/LINE_APP_iOS.png) no-repeat;
+    a {
+        text-decoration: none;
+    }
+}

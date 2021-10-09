@@ -1,71 +1,10 @@
 @charset "UTF-8";
-.u-desktop {
-  display: none;
-}
-
-@media screen and (max-width: 1023px) {
-  .u-desktop {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .u-mobile {
-    display: none;
-  }
-}
-
 /* FontFamily */
 body {
   font-family: "";
 }
 
 /* font-weight */
-/* リキッドレイアウト対応 */
-html {
-  font-size: 16px;
-}
-
-@media screen and (max-width: 1100px) {
-  html {
-    font-size: 1.45455vw;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  html {
-    font-size: 4.26667vw;
-  }
-}
-
-/* pcの電話番号発信対応 */
-@media screen and (max-width: 767px) {
-  a[href^="tel:"] {
-    pointer-events: none;
-  }
-}
-
-/* ホバー */
-a {
-  text-decoration: none;
-  color: inherit;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-  opacity: 0.8;
-}
-
-@media screen and (max-width: 767px) {
-  a:hover {
-    opacity: 1;
-  }
-}
-
 *,
 *::before,
 *::after {
@@ -185,20 +124,175 @@ select::-ms-expand {
   margin: 1px;
 }
 
-.l-inner {
+.header {
+  background: rgba(0, 0, 0, 0);
+  height: 100px;
   width: 100%;
-  padding-right: 25px;
-  padding-left: 25px;
-  margin-right: auto;
-  margin-left: auto;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
 }
 
-@media screen and (max-width: 767px) {
-  .l-inner {
-    max-width: 1150px;
-    padding-right: 20px;
-    padding-left: 20px;
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: inherit;
+}
+
+.header__logo {
+  width: 75px;
+  margin-left: 80px;
+  margin-left: 5rem;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  color: #FFF;
+}
+
+.header__nav-mail {
+  width: 150px;
+  background: url(../img/メールのアイコン.png) no-repeat center;
+}
+
+.header__nav-mail a {
+  text-decoration: none;
+}
+
+.header__nav-line {
+  width: 50px;
+  background: url(../img/LINE_APP_iOS.png) no-repeat;
+}
+
+.header__nav-line a {
+  text-decoration: none;
+}
+
+.inner {
+  width: 1440px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/*
+
+.l-inner {
+  width: 100%;
+  padding-right: $padding-pc;
+  padding-left: $padding-pc;
+  margin-right: auto;
+  margin-left: auto;
+  @include mq("md") {
+    max-width: $inner + strip-unit($padding-pc) * 2;
+    padding-right: $padding-sp;
+    padding-left: $padding-sp;
   }
+}
+
+*/
+.main-visual {
+  height: 959px;
+  width: 100%;
+  background: url(../img/メインビュー.png) no-repeat center center/cover;
+  position: relative;
+  top: 0;
+}
+
+.menu {
+  height: 87px;
+  width: 100%;
+  background: #47B45E;
+  color: #fff;
+  z-index: 101;
+  position: sticky;
+  top: 0;
+}
+
+.menu__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__item {
+  font-size: 20px;
+  width: 100%;
+}
+
+.menu__item a {
+  text-decoration: none;
+  display: block;
+  font-weight: 700;
+  text-align: center;
+}
+
+.menu__item a:hover {
+  opacity: 0.5;
+}
+
+.sub-visual {
+  width: 100%;
+  background: #FAFFF4;
+}
+
+.sub-visual__img {
+  height: 960px;
+  width: 100%;
+  background: url(../img/サブビュー.png) no-repeat center center/cover;
+  position: relative;
+  margin-top: 315px;
+}
+
+.sub-visual__1 {
+  width: 555px;
+  height: 259px;
+  position: absolute;
+  left: 20%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 0;
+}
+
+.sub-visual__2 {
+  width: 492px;
+  height: 186px;
+  position: absolute;
+  left: 768px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 40%;
+}
+
+.sub-visual__3 {
+  width: 540px;
+  height: 222px;
+  position: absolute;
+  left: 167px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 60%;
+}
+
+.sub-visual__4 {
+  width: 524px;
+  height: 186px;
+  position: absolute;
+  left: 725px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 80%;
 }
 
 .appp {

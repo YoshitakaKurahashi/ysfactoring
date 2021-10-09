@@ -1,5 +1,17 @@
 @import "../function/function";
 
+.inner {
+  width: $layout-width-inner;
+  max-width: 100%;
+  margin: 0 auto;
+  // @include mq(‘sp’) {
+  //     padding-left: 20px;
+  //     padding-right: 20px;
+  // }
+}
+
+/*
+
 .l-inner {
   width: 100%;
   padding-right: $padding-pc;
@@ -12,3 +24,5 @@
     padding-left: $padding-sp;
   }
 }
+
+*/

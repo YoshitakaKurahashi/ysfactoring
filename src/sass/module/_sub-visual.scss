@@ -1,0 +1,50 @@
+// sub-visual
+.sub-visual {
+  width: 100%;
+  background: #FAFFF4;
+}
+.sub-visual__img {
+  height: 960px;
+  width: 100%;
+  background: url(../img/サブビュー.png) no-repeat center center / cover;
+  position: relative;
+  margin-top: 315px;
+  // @include mq('sp') {
+  //     height: 250px;
+  //     width: 100%;
+  // }
+}
+.sub-visual__content {
+}
+.sub-visual__1 {
+  width: 555px;
+  height: 259px;
+  position: absolute;
+  left:20%;
+  transform: translateY(-50%);
+  top: 0;
+}
+.sub-visual__2 {
+  width: 492px;
+  height: 186px;
+  position: absolute;
+  left: 768px;
+  transform: translateY(-50%);
+  top: 40%;
+}
+.sub-visual__3 {
+  width: 540px;
+  height: 222px;
+  position: absolute;
+  left: 167px;
+  transform: translateY(-50%);
+  top: 60%;
+}
+.sub-visual__4 {
+  width: 524px;
+  height: 186px;
+  position: absolute;
+  left: 725px;
+  transform: translateY(-50%);
+  top: 80%;
+}

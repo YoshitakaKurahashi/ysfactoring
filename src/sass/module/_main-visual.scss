@@ -1,0 +1,14 @@
+// main-visual
+.main-visual {
+  height: 959px;
+  width: 100%;
+  background: url(../img/メインビュー.png) no-repeat center center / cover;
+  position: relative;
+  top: 0;
+  // @include mq('sp') {
+  //     height: 739px;
+  //     background: url(../img/背景画像sp.png) no-repeat center center / cover;
+  // }
+}
+.main-visual__content {
+}
