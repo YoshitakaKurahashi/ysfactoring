@@ -588,31 +588,6 @@ footer {
           align-items: center;
 }
 
-.p-contact__img {
-  width: 100%;
-  position: relative;
-}
-
-.p-contact__img::before {
-  padding-top: 67.2463%;
-  display: block;
-  content: "";
-}
-
-.p-contact__img img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100%;
-  -o-object-position: center;
-     object-position: center;
-}
-
 .p-contact__body,
 .p-contact__text,
 .p-contact__btn {
@@ -635,6 +610,8 @@ footer {
   padding: 5px 10px;
   padding: 0.3125rem 0.625rem;
   width: 100%;
+  max-width: 540px;
+  max-width: 33.75rem;
 }
 
 .p-contact-text__text:focus {
@@ -765,6 +742,15 @@ footer {
 .p-sub-contact__contents {
   margin-top: 50px;
   margin-top: 3.125rem;
+}
+
+.p-sub-contact__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .p-sub-contact__content +
