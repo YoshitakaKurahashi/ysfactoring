@@ -1,7 +1,7 @@
 {
   "name": "task-runner-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "## 環境 - Gulpが使える環境が前提（4系）",
   "main": "index.js",
   "author": "",
   "license": "ISC",
@@ -33,5 +33,13 @@
     "clean": "rimraf dist/*",
     "start": "gulp",
     "build": "npm run clean && gulp build"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YoshitakaKurahashi/ysfactoring.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YoshitakaKurahashi/ysfactoring/issues"
+  },
+  "homepage": "https://github.com/YoshitakaKurahashi/ysfactoring#readme"
 }
