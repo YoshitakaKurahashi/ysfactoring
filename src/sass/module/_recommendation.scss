@@ -1,0 +1,39 @@
+.recommendation {
+  max-width: rem(1160);
+  width: 100%;
+  border: 3px solid #ff7f00;
+  padding: rem(14) rem(25) rem(14) rem(69);
+}
+
+.l-recommendation {
+  margin: auto;
+
+}
+
+.recommendation__lead {
+  font-size: rem(38);
+  font-family: $third-font-family;
+  line-height: (55 / 38);
+  color: $color-main-2;
+  margin-bottom: rem(33);
+  text-align: left;
+  position: relative;
+  z-index: 100;
+}
+
+.recommendation__lead::before {
+  content: "";
+  position: absolute;
+  background: url(/assets/images/common/conntact_women.png) no-repeat center center / cover;
+  max-width: rem(381);
+  width: 100%;
+  height: rem(254);
+  right: rem(-25);
+  bottom: rem(-150);
+  z-index: -1;
+}
+
+.l-contact-contents {
+  position: relative;
+  z-index: 100;
+}
