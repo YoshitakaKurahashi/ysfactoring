@@ -126,54 +126,30 @@ select::-ms-expand {
 
 .appeal {
   background-color: #FAFFF4;
-  text-align: center;
 }
 
 .appeal__title {
+  display: block;
   font-family: "Noto Serif JP", serif;
   font-weight: bold;
   margin-bottom: 95px;
   margin-bottom: 5.9375rem;
   padding-top: 58px;
   padding-top: 3.625rem;
-  position: relative;
-  background-color: #fff;
-  border-bottom: 2px solid #525252;
-  padding: 10px;
-  width: 80%;
   text-align: center;
 }
 
-.appeal__title:before,
-.appeal__title:after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.appeal__title:before {
-  border: 12px solid transparent;
-  border-top: 12px solid #525252;
-}
-
-.appeal__title:after {
-  border: solid 14px transparent;
-  border-top: solid 14px #fff;
-  margin-top: -5px;
-}
-
 .appeal__title p {
-  margin: 0;
-  padding: 0;
-}
-
-.appeal__title p {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px 75px 10px 33px;
+  padding: 0.625rem 4.6875rem 0.625rem 2.0625rem;
+  position: relative;
+  background-color: transparent;
   font-family: "Noto Serif JP", serif;
   font-size: 30px;
   font-size: 1.875rem;
+  border-bottom: 2px solid #525252;
 }
 
 .appeal__title--strong {
@@ -182,6 +158,27 @@ select::-ms-expand {
   color: #47B45E;
   margin: 0 14px 0 16px;
   margin: 0 0.875rem 0 1rem;
+}
+
+.appeal__title p:before,
+.appeal__title p:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.appeal__title p:before {
+  border: 12px solid transparent;
+  border-top: 12px solid #525252;
+}
+
+.appeal__title p:after {
+  border: solid 14px transparent;
+  border-top: solid 14px #fff;
+  margin-top: -5px;
 }
 
 .appeal__cards {
@@ -194,9 +191,9 @@ select::-ms-expand {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .appeal__cards--top {
@@ -251,10 +248,13 @@ select::-ms-expand {
 .appeal__card--title {
   font-size: 16px;
   font-size: 1rem;
+  font-weight: 700;
   line-height: 1.4375;
   text-align: center;
   margin-bottom: 18px;
   margin-bottom: 1.125rem;
+  padding: 0 25px;
+  padding: 0 1.5625rem;
 }
 
 .appeal__card--image {
