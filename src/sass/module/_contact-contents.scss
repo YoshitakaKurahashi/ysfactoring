@@ -3,6 +3,10 @@
   align-items: center;
   background: transparent; //これが正解
   // background: $black; //あとで消す
+
+  @include mq(md) {
+    display: none;
+  }
 }
 
 .contact-contents__telephone {
