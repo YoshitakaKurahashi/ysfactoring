@@ -284,6 +284,12 @@ select::-ms-expand {
   background: transparent;
 }
 
+@media screen and (max-width: 767px) {
+  .contact-contents {
+    display: none;
+  }
+}
+
 .contact-contents__telephone {
   margin-right: 27px;
   margin-right: 1.6875rem;
@@ -471,6 +477,210 @@ footer {
   padding-top: 0.4375rem;
   padding-bottom: 10px;
   padding-bottom: 0.625rem;
+}
+
+.user-guide__contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1110px;
+  max-width: 69.375rem;
+  width: 100%;
+  margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .user-guide__contents {
+    max-width: 23.4375rem;
+    width: 100%;
+    padding: 0 1.0625rem 0 1rem;
+  }
+}
+
+.guide-card {
+  width: calc(32% - 31.33333px);
+  padding: 45px 27px 16px 30px;
+  padding: 2.8125rem 1.6875rem 1rem 1.875rem;
+  background: #fff;
+  border: 0.5px solid #19C755;
+  font-family: "Noto Serif JP", serif;
+  position: relative;
+  margin-top: 35px;
+  margin-top: 2.1875rem;
+  margin-left: 47px;
+  margin-left: 2.9375rem;
+  color: #2e2e2e;
+}
+
+.guide-card:nth-child(3n + 1) {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .guide-card:nth-child(3n + 1) {
+    margin-left: 1.1875rem;
+  }
+}
+
+.guide-card:nth-child(4), .guide-card:nth-child(5), .guide-card:nth-child(6) {
+  margin-top: 100px;
+  margin-top: 6.25rem;
+}
+
+@media screen and (max-width: 767px) {
+  .guide-card:nth-child(4), .guide-card:nth-child(5), .guide-card:nth-child(6) {
+    margin-top: 1.0625rem;
+  }
+}
+
+.guide-card:nth-child(3) .guide-card__img, .guide-card:nth-child(4) .guide-card__img {
+  width: 135px;
+  width: 8.4375rem;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
+}
+
+.guide-card:nth-child(5) .guide-card__img, .guide-card:nth-child(6) .guide-card__img {
+  width: 140px;
+  width: 8.75rem;
+  margin: auto;
+  margin-bottom: 23px;
+  margin-bottom: 1.4375rem;
+}
+
+.guide-card:nth-child(1)::before {
+  content: "STEP 01";
+}
+
+.guide-card:nth-child(2)::before {
+  content: "STEP 02";
+}
+
+.guide-card:nth-child(3)::before {
+  content: "STEP 03";
+}
+
+.guide-card:nth-child(4)::before {
+  content: "STEP 04";
+}
+
+.guide-card:nth-child(5)::before {
+  content: "STEP 05";
+}
+
+.guide-card:nth-child(6)::before {
+  content: "STEP 06";
+}
+
+@media screen and (max-width: 767px) {
+  .guide-card {
+    width: calc(50% - 9.5px);
+    margin-left: 1.1875rem;
+    margin-top: 1.0625rem;
+  }
+  .guide-card:nth-child(2n + 1) {
+    margin-left: 0;
+  }
+}
+
+.guide-card:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 170px;
+  right: -24px;
+  border-style: solid;
+  border-width: 42px 0 42px 24px;
+  border-color: transparent transparent transparent #47B45E;
+}
+
+@media screen and (max-width: 767px) {
+  .guide-card:not(:last-child)::after {
+    right: -12px;
+    top: 80px;
+    border-width: 20px 0 20px 12px;
+    border-color: transparent transparent transparent #47B45E;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .guide-card {
+    max-width: 9.75rem;
+    padding: 1.4375rem 0.8125rem 0.9375rem 0.875rem;
+  }
+}
+
+.guide-card::before {
+  position: absolute;
+  left: 0;
+  top: -36px;
+  background: #47B45E;
+  color: #fff;
+  font-size: 24px;
+  font-size: 1.5rem;
+  width: 191px;
+  height: 36px;
+  padding-left: 32px;
+  -webkit-clip-path: polygon(0% 100%, 0% 0%, 85% 0%, 100% 100%);
+          clip-path: polygon(0% 100%, 0% 0%, 85% 0%, 100% 100%);
+}
+
+@media screen and (max-width: 767px) {
+  .guide-card::before {
+    width: 5.625rem;
+    height: 1.0625rem;
+    padding-left: 0.9375rem;
+    font-size: 0.75rem;
+    top: -17px;
+  }
+}
+
+.guide-card__title {
+  font-size: 25px;
+  font-size: 1.5625rem;
+  line-height: 1.44;
+  text-align: center;
+  color: #2e2e2e;
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
+}
+
+@media screen and (max-width: 767px) {
+  .guide-card__title {
+    font-size: 0.75rem;
+    line-height: 1.41667;
+    margin-bottom: 0.875rem;
+  }
+}
+
+.guide-card__img {
+  max-width: 192px;
+  max-width: 12rem;
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
+}
+
+@media screen and (max-width: 767px) {
+  .guide-card__img {
+    max-width: 5.6875rem;
+    margin-bottom: 0.875rem;
+  }
+}
+
+.guide-card__text {
+  line-height: 1.4375;
+  text-align: left;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+@media screen and (max-width: 767px) {
+  .guide-card__text {
+    font-size: 0.625rem;
+    line-height: 1.5;
+  }
 }
 
 .guide {
@@ -669,6 +879,12 @@ footer {
   border: 3px solid #ff7f00;
   padding: 14px 25px 14px 69px;
   padding: 0.875rem 1.5625rem 0.875rem 4.3125rem;
+}
+
+@media screen and (max-width: 767px) {
+  .recommendation {
+    display: none;
+  }
 }
 
 .l-recommendation {
