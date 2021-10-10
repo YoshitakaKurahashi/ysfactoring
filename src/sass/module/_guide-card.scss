@@ -51,6 +51,11 @@
       width: rem(135);
       margin: auto;
       margin-bottom: rem(30);
+
+      @include mq(md) {
+        width: rem(64);
+        margin-bottom: rem(14);
+      }
     }
   }
 
@@ -60,6 +65,11 @@
       width: rem(140);
       margin: auto;
       margin-bottom: rem(23);
+
+      @include mq(md) {
+        width: rem(64);
+        margin-bottom: rem(14);
+      }
     }
   }
 

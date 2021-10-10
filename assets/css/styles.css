@@ -543,12 +543,26 @@ footer {
   margin-bottom: 1.875rem;
 }
 
+@media screen and (max-width: 767px) {
+  .guide-card:nth-child(3) .guide-card__img, .guide-card:nth-child(4) .guide-card__img {
+    width: 4rem;
+    margin-bottom: 0.875rem;
+  }
+}
+
 .guide-card:nth-child(5) .guide-card__img, .guide-card:nth-child(6) .guide-card__img {
   width: 140px;
   width: 8.75rem;
   margin: auto;
   margin-bottom: 23px;
   margin-bottom: 1.4375rem;
+}
+
+@media screen and (max-width: 767px) {
+  .guide-card:nth-child(5) .guide-card__img, .guide-card:nth-child(6) .guide-card__img {
+    width: 4rem;
+    margin-bottom: 0.875rem;
+  }
 }
 
 .guide-card:nth-child(1)::before {
