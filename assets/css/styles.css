@@ -274,6 +274,159 @@ select::-ms-expand {
   text-align: left;
 }
 
+.contact-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #111;
+}
+
+.contact-contents__telephone {
+  margin-right: 27px;
+  margin-right: 1.6875rem;
+}
+
+.telephone-info {
+  padding-top: 10px;
+  padding-top: 0.625rem;
+}
+
+.telephone-info__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.telephone-info__top--text {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1;
+  width: 233px;
+  width: 14.5625rem;
+  border-radius: 3.125rem;
+  text-align: center;
+  background: #fff;
+  padding: 5px 0 6px;
+  padding: 0.3125rem 0 0.375rem;
+  margin-right: 5px;
+  margin-right: 0.3125rem;
+  color: #707070;
+}
+
+.telephone-info__top--business-hours {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1;
+}
+
+.telephone-info__under {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 4px;
+  padding-right: 0.25rem;
+}
+
+.telephone-info__under--log {
+  margin-right: auto;
+  width: 67px;
+  width: 4.1875rem;
+}
+
+.telephone-info__under--number a {
+  font-size: 42px;
+  font-size: 2.625rem;
+  letter-spacing: 0.5;
+  text-decoration: none;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.contact-contents__mail-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: inherit;
+}
+
+.mail-info {
+  width: 150px;
+  width: 9.375rem;
+  background: #FFBE3B;
+  padding-top: 18px;
+  padding-top: 1.125rem;
+  padding-bottom: 9px;
+  padding-bottom: 0.5625rem;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  height: inherit;
+}
+
+.mail-info__img {
+  width: 42px;
+  width: 2.625rem;
+  margin: auto;
+  margin-bottom: -1px;
+  margin-bottom: -0.0625rem;
+}
+
+.mail-info__text {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.375;
+  color: #fff;
+  line-height: 1;
+}
+
+.line-info {
+  width: 100px;
+  width: 6.25rem;
+  background: #19C755;
+  padding-top: 14px;
+  padding-top: 0.875rem;
+  padding-bottom: 9px;
+  padding-bottom: 0.5625rem;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  height: inherit;
+}
+
+.line-info__img {
+  width: 50px;
+  width: 3.125rem;
+  margin: auto;
+  margin-bottom: 11px;
+  margin-bottom: 0.6875rem;
+}
+
+.line-info__text {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #fff;
+  line-height: 1;
+}
+
+.font-white {
+  color: #fff;
+}
+
+.font-gray {
+  color: #707070;
+}
+
 footer {
   width: 100%;
   bottom: 0;
@@ -805,6 +958,6 @@ footer {
 }
 
 body {
-  font-size: 60px;
-  font-size: 3.75rem;
+  font-size: 16px;
+  font-size: 1rem;
 }
