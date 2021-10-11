@@ -61,10 +61,14 @@
   padding-bottom: rem(135);
 }
 
-.appeal__cards--top,
-.appeal__cards--bottom{
+.appeal__cards--inner{
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  // align-content: center;
+
+  max-width: rem(1060);
+  width: 100%;
+  margin: 0 auto;
 }
 
 .appeal__cards--top{
@@ -77,16 +81,28 @@
   border-radius: rem(18);
   background-color: #fff;
 
-  width: 100%;
   max-width: rem(280);
+  width: 100%;
+  // height: 100%;
+
+  // width: calc((100% / 3) - (11rem * 2 / 3));
+  // max-width: rem(280);
+
   padding: rem(11) rem(19) rem(17);
 
-  margin-right: rem(55);
+
+  margin-top:rem(75);
+  margin-right:rem(110);
+
 }
 
-.appeal__card:nth-of-type(3){
+.appeal__card:nth-of-type(3n){
   margin-right: 0;
+  @include mq(lg) {
+    margin-right: rem(110);
 }
+}
+
 
 .appeal__card--point{
   position: absolute;
