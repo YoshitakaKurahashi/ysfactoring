@@ -70,13 +70,6 @@ article > * + * {
 }
 
 /* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
 /* Blur images when they have no alt attribute */
 img:not([alt]) {
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
@@ -85,35 +78,18 @@ img:not([alt]) {
 }
 
 /* フォームリセット */
-input,
-button,
-select,
-textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  font: inherit;
-  outline: none;
-}
-
-textarea {
-  resize: vertical;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  display: none;
-}
-
 input[type="submit"],
 input[type="button"],
 label,
 button,
 select {
   cursor: pointer;
+}
+
+label {
+  line-height: 1;
+  font-size: 16px;
+  font-size: 1rem;
 }
 
 select::-ms-expand {
@@ -999,183 +975,81 @@ footer {
   top: 80%;
 }
 
-.p-contact {
-  position: relative;
-  padding: 40px 0;
-  padding: 2.5rem 0;
-  background-color: #F2F2F2;
+.sub-contact__inner {
+  text-align: center;
+  margin: 69px auto 0;
+  margin: 4.3125rem auto 0;
+  max-width: 757px;
+  max-width: 47.3125rem;
+  width: 100%;
 }
 
-.p-contact__wrapper {
+.sub-contact__head {
+  margin-bottom: 64px;
+  margin-bottom: 4rem;
+}
+
+.sub-contact__title {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-family: "Noto Serif JP", serif;
+  color: #2E2E2E;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+}
+
+.sub-contact__description {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-family: 'Hiragino Kaku Gothic ProN',sans-serif;
+  line-height: 1;
+  color: #707070;
+}
+
+.sub-contact__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 28px;
+  margin-bottom: 1.75rem;
 }
 
-.p-contact__body,
-.p-contact__text,
-.p-contact__btn {
-  margin-top: 30px;
-  margin-top: 1.875rem;
+.sub-contact__content--textarea {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 33px;
+  margin-bottom: 2.0625rem;
 }
 
-.p-contact-text__text {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  background-image: none;
-  border: 1px solid #333;
-  border-radius: 0;
-  color: inherit;
-  font-family: inherit;
-  font-size: 16px;
-  font-size: 1rem;
-  padding: 5px 10px;
-  padding: 0.3125rem 0.625rem;
-  width: 100%;
-  max-width: 540px;
-  max-width: 33.75rem;
+.sub-contact__content--check {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 33px;
+  margin-bottom: 2.0625rem;
 }
 
-.p-contact-text__text:focus {
-  border: 1px solid #333;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline: none;
+.sub-contact__content--submit {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 61px;
+  margin-bottom: 3.8125rem;
 }
 
-.p-contact-textarea__text {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  background-image: none;
-  border: 1px solid #333;
-  border-radius: 0;
-  color: inherit;
-  font-family: inherit;
-  font-size: 16px;
-  font-size: 1rem;
-  height: 210px;
-  height: 13.125rem;
-  padding: 5px 10px;
-  padding: 0.3125rem 0.625rem;
-  width: 100%;
-}
-
-.p-contact-textarea__text:focus {
-  border: 1px solid #333;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline: none;
-}
-
-.p-contact-check__item {
-  display: none;
-}
-
-.p-contact-check__item + span {
-  cursor: pointer;
-  display: inline-block;
-  margin: 0 0.2em 0;
-  padding: 0 0 0 25px;
-  padding: 0 0 0 1.5625rem;
-  position: relative;
-  font-size: 14px;
-  font-size: 0.875rem;
-  letter-spacing: 0.04em;
-  line-height: 1.714285;
-}
-
-.p-contact-check__item + span::before {
-  -webkit-transform: translateY(-50%);
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, .16);
-  border-radius: 2px;
-  content: "";
-  display: block;
-  height: 1em;
-  left: 0;
-  position: absolute;
-  width: 1em;
-}
-
-.p-contact-check__item + span::after {
-  -webkit-transform: translateY(-50%) rotate(-45deg);
-  border-bottom: 3px solid black;
-  border-left: 3px solid black;
-  content: "";
-  display: block;
-  height: 0.6em;
-  left: 1px;
-  left: 0.0625rem;
-  opacity: 0;
-  position: absolute;
-  top: 8px;
-  transform: translateY(-50%) rotate(-45deg);
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  width: 1em;
-}
-
-.p-contact-check__item:checked + span::after {
-  opacity: 1;
-}
-
-.p-contact-button__submit {
-  -webkit-appearance: none;
-  background-color: #000;
-  background-image: none;
-  border: none;
-  border-radius: 0;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  margin: 0;
-  padding: 11px 66px;
-  padding: 0.6875rem 4.125rem;
-  text-decoration: none;
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-weight: bold;
-}
-
-.p-contact-button__submit:hover,
-.p-contact-button__submit:focus {
-  outline: none;
-}
-
-.p-contact-button__submit::-moz-foucus-inner {
-  border: none;
-  padding: 0;
-}
-
-.p-sub-contact {
-  padding-bottom: 80px;
-  padding-bottom: 5rem;
-}
-
-.p-sub-contact__text {
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.7;
-  letter-spacing: 4;
-}
-
-.p-sub-contact__contents {
-  margin-top: 50px;
-  margin-top: 3.125rem;
-}
-
-.p-sub-contact__content {
+.sub-contact__label {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-family: 'Hiragino Kaku Gothic ProN',sans-serif;
+  line-height: 1;
+  color: #707070;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1184,48 +1058,77 @@ footer {
           justify-content: space-between;
 }
 
-.p-sub-contact__content +
-.p-sub-contact__content {
-  margin-top: 40px;
-  margin-top: 2.5rem;
-}
-
-.p-sub-contact__head {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.p-sub-contact__title {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1;
-  letter-spacing: 0.04em;
-  font-weight: bold;
-  margin-right: 10px;
-  margin-right: 0.625rem;
-}
-
-.p-sub-contact__required {
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1;
-  padding: 3px 5px;
-  padding: 0.1875rem 0.3125rem;
-  background-color: #333;
+.sub-contact__required {
+  font-size: 10px;
+  font-size: 0.625rem;
+  font-family: "Noto Serif JP", serif;
+  line-height: 1.5;
+  color: #707070;
+  padding: 1px 5px 2px;
+  padding: 0.0625rem 0.3125rem 0.125rem;
+  margin-left: 10px;
+  margin-left: 0.625rem;
+  background-color: #FF0000;
   color: white;
 }
 
-.p-sub-contact__item {
-  margin-top: 10px;
-  margin-top: 0.625rem;
+.sub-contact__text {
+  border: 1px solid #707070;
+  max-width: 540px;
+  max-width: 33.75rem;
+  width: 100%;
+  background-color: #fff;
+  color: inherit;
+  font-family: inherit;
+  font-size: 18px;
+  font-size: 1.125rem;
+  padding: 7px 10px 8px;
+  padding: 0.4375rem 0.625rem 0.5rem;
 }
 
-.p-sub-contact__content--button {
-  text-align: center;
+.sub-contact__text--textarea {
+  height: 160px;
+  height: 10rem;
+}
+
+.sub-contact__check {
+  width: 22px;
+  width: 1.375rem;
+  height: 22px;
+  height: 1.375rem;
+}
+
+.sub-contact__check--text {
+  font-size: 16px;
+  font-size: 1rem;
+  font-family: "Noto Serif JP", serif;
+  line-height: 1;
+  color: #707070;
+  margin-left: 15px;
+  margin-left: 0.9375rem;
+  vertical-align: text-top;
+}
+
+.sub-contact__submit {
+  background-color: #FF7F00;
+  border: none;
+  border-radius: 0.9375rem;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  padding: 14px 105px 15px;
+  padding: 0.875rem 6.5625rem 0.9375rem;
+  text-decoration: none;
+  font-family: "Noto Serif JP", serif;
+  font-size: 23px;
+  font-size: 1.4375rem;
+  font-weight: 700;
+}
+
+.karikarikari {
+  margin-bottom: 145px;
+  margin-bottom: 9.0625rem;
 }
 
 .test {
