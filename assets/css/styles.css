@@ -186,14 +186,16 @@ select::-ms-expand {
   padding-bottom: 8.4375rem;
 }
 
-.appeal__cards--top,
-.appeal__cards--bottom {
+.appeal__cards--inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1060px;
+  max-width: 66.25rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .appeal__cards--top {
@@ -207,17 +209,25 @@ select::-ms-expand {
   border: 0.0625rem solid #47B45E;
   border-radius: 1.125rem;
   background-color: #fff;
-  width: 100%;
   max-width: 280px;
   max-width: 17.5rem;
+  width: 100%;
   padding: 11px 19px 17px;
   padding: 0.6875rem 1.1875rem 1.0625rem;
-  margin-right: 55px;
-  margin-right: 3.4375rem;
+  margin-top: 75px;
+  margin-top: 4.6875rem;
+  margin-right: 110px;
+  margin-right: 6.875rem;
 }
 
-.appeal__card:nth-of-type(3) {
+.appeal__card:nth-of-type(3n) {
   margin-right: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .appeal__card:nth-of-type(3n) {
+    margin-right: 6.875rem;
+  }
 }
 
 .appeal__card--point {
