@@ -1,0 +1,45 @@
+
+.voice {
+
+}
+
+.voice__cards {
+
+}
+
+.voice__card {
+  display: flex;
+}
+
+.voice__avatar {
+  widows: 100%;
+  max-width: 9.5rem;
+
+}
+
+.voice__avatar--name {
+  font-size: 1rem;
+}
+
+.voice__content {
+  max-width: 36rem;
+  width: 100%;
+  font-size: 1rem;
+  margin-left: 2.625rem;
+}
+
+.voice__content--price {
+  
+  
+  & span {
+    margin-left: 2.87rem;
+  }
+}
+
+.voice__content--text { 
+  background-color: #fff;
+  padding: 8px 20px 12px 10px;
+  border: 0.5px solid #707070;
+  border-radius: 15px;
+  margin-top: 1.562rem;
+}

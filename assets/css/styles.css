@@ -568,6 +568,47 @@ footer {
   top: 80%;
 }
 
+.voice__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.voice__avatar {
+  widows: 100%;
+  max-width: 152px;
+  max-width: 9.5rem;
+}
+
+.voice__avatar--name {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+.voice__content {
+  max-width: 576px;
+  max-width: 36rem;
+  width: 100%;
+  font-size: 16px;
+  font-size: 1rem;
+  margin-left: 42px;
+  margin-left: 2.625rem;
+}
+
+.voice__content--price span {
+  margin-left: 45.92px;
+  margin-left: 2.87rem;
+}
+
+.voice__content--text {
+  background-color: #fff;
+  padding: 8px 20px 12px 10px;
+  border: 0.5px solid #707070;
+  border-radius: 15px;
+  margin-top: 24.992px;
+  margin-top: 1.562rem;
+}
+
 .p-contact {
   position: relative;
   padding: 40px 0;
