@@ -975,6 +975,121 @@ footer {
   top: 80%;
 }
 
+.l-about {
+  padding: 0 25px;
+}
+
+.about__overview {
+  background: #fafff4;
+  padding-top: 135px;
+  padding-top: 8.4375rem;
+}
+
+.overview__company-name {
+  color: #2e2e2e;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.45833;
+  text-align: center;
+  margin-bottom: 72px;
+  margin-bottom: 4.5rem;
+}
+
+.contents__table {
+  margin: auto;
+  color: #707070;
+  border-collapse: collapse;
+  padding-right: 18px;
+  padding-right: 1.125rem;
+}
+
+.contents__table th, td {
+  text-align: left;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.7;
+  border-bottom: 1px solid #707070;
+}
+
+.contents__table tr:not(:first-child) th,
+.contents__table tr:not(:first-child) td {
+  padding-top: 45px;
+  padding-top: 2.8125rem;
+}
+
+.contents__table tr:not(:last-child) th,
+.contents__table tr:not(:last-child) td {
+  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
+}
+
+.contents__table tr:last-child th,
+.contents__table tr:last-child td {
+  border-bottom: none;
+}
+
+.contents__table th {
+  width: 157px;
+  width: 9.8125rem;
+}
+
+.about__basic-policy {
+  background: #fafff4;
+  padding-top: 97px;
+  padding-top: 6.0625rem;
+  padding-bottom: 79px;
+  padding-bottom: 4.9375rem;
+}
+
+@media screen and (max-width: 767px) {
+  .about__basic-policy {
+    background: #fff;
+  }
+}
+
+.basic-policy__title {
+  font-size: 24px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #2e2e2e;
+  margin-bottom: 28px;
+  margin-bottom: 1.75rem;
+  line-height: 1.45833;
+}
+
+.basic-policy__text {
+  border: 1px solid #707070;
+  background: #fff;
+  padding: 25px 44px;
+  padding: 1.5625rem 2.75rem;
+  text-align: left;
+  color: #707070;
+  max-width: 930px;
+  max-width: 58.125rem;
+  width: 100%;
+  margin: auto;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+}
+
+.basic-policy__text span {
+  display: block;
+  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+}
+
+.pc-none {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .pc-none {
+    display: block;
+  }
+}
+
 .l-about-recommend {
   margin-bottom: 145px;
   margin-bottom: 9.0625rem;
