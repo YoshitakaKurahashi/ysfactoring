@@ -1,0 +1,134 @@
+.contact-contents {
+  display: flex;
+  align-items: center;
+  background: transparent; //これが正解
+  // background: $black; //あとで消す
+
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.contact-contents__telephone {
+  margin-right: rem(27);
+}
+
+.telephone-info {
+  padding-top: rem(10);
+}
+
+.telephone-info__top {
+  display: flex;
+  align-items: center;
+  font-family: $third-font-family;
+}
+
+.telephone-info__top--text {
+  font-size: rem(12);
+  line-height: 1;
+  width: rem(233);
+  border-radius: rem(50);
+  text-align: center;
+  background: $white;
+  padding: rem(5) 0 rem(6);
+  margin-right: rem(5);
+  color: #707070;
+  border: 1px solid #707070;
+}
+
+.telephone-info__top--business-hours {
+  font-size: rem(13);
+  line-height: 1;
+
+  span {
+  }
+}
+
+.telephone-info__under {
+  display: flex;
+  align-items: center;
+  padding-right: rem(4);
+}
+
+.telephone-info__under--log {
+  margin-right: auto;
+  width: rem(67);
+
+  img {
+  }
+}
+
+.telephone-info__under--number {
+  a {
+    font-size: rem(42);
+    letter-spacing: 0.5;
+    text-decoration: none;
+    font-family: $third-font-family;
+  }
+}
+
+.contact-contents__mail-line {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.mail-info {
+  width: rem(150);
+  background: $color-accent;
+  padding-top: rem(18);
+  padding-bottom: rem(9);
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  height: inherit;
+}
+
+.mail-info__img {
+  width: rem(42);
+  margin: auto;
+  margin-bottom: rem(-1);
+  img {
+  }
+}
+
+.mail-info__text {
+  font-family: $third-font-family;
+  line-height: (22 / 16);
+  color: $white;
+  line-height: 1;
+}
+
+.line-info {
+  width: rem(100);
+  background: $color-main;
+  padding-top: rem(14);
+  padding-bottom: rem(9);
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  height: inherit;
+}
+
+.line-info__img {
+  width: rem(50);
+  margin: auto;
+  margin-bottom: rem(11);
+  img {
+  }
+}
+
+.line-info__text {
+  font-family: $third-font-family;
+  color: $white;
+  line-height: 1;
+}
+
+.font-white {
+  color: $white;
+}
+
+.font-gray {
+color: #707070;
+}
