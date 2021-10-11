@@ -3,6 +3,10 @@
   width: 100%;
   border: 3px solid #ff7f00;
   padding: rem(14) rem(25) rem(14) rem(69);
+
+  @include mq(md) {
+    display: none;
+  }
 }
 
 .l-recommendation {
