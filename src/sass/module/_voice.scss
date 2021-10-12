@@ -3,6 +3,10 @@
 
 }
 
+.voice__title {
+  
+}
+
 .voice__cards {
 
 }
@@ -13,31 +17,31 @@
 
 .voice__avatar {
   widows: 100%;
-  max-width: 9.5rem;
+  max-width: rem(152); //152px
 
 }
 
 .voice__avatar--name {
-  font-size: 1rem;
+  font-size: rem(16); //16px
 }
 
 .voice__content {
-  max-width: 36rem;
+  max-width: rem(576); //576px
   width: 100%;
-  font-size: 1rem;
-  margin-left: 2.625rem;
+  font-size: rem(16);
+  margin-left: rem(42); // 42px
 }
 
 .voice__content--price {
   
   
   & span {
-    margin-left: 2.87rem;
+    margin-left: rem(45); //45px
   }
 }
 
 .voice__content--text { 
-  background-color: #fff;
+  background-color: $white;
   padding: 8px 20px 12px 10px;
   border: 0.5px solid #707070;
   border-radius: 15px;
