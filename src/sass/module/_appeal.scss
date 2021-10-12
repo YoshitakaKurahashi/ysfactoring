@@ -6,10 +6,20 @@
   display: block;
   font-family: $second-font-family;
   font-weight: bold;
-  margin-bottom: rem(95);
   padding-top: rem(58);
+  margin-bottom: rem(95);
 
   text-align: center;
+
+  @include mq(md){
+    padding-top: rem(45);
+    margin-bottom: rem(40);
+  }
+
+  @include mq(sm){
+    padding-top: rem(32);
+    margin-bottom: rem(-10);
+  }
   }
 
   
@@ -25,15 +35,36 @@
     font-family: $second-font-family;
     font-size: rem(30);
 
-    border-bottom: 2px solid #525252;
+    border-bottom: 1px solid #525252;
+
+    @include mq(md){
+      font-size: rem(16);
+
+      padding: rem(8) rem(53) rem(8) rem(25);
+    }
  
+    @include mq(sm){
+      font-size: rem(16);
+
+      padding: rem(6) rem(31) rem(6) rem(17);
+    }
   }
 
   
   .appeal__title--strong{
     font-size: rem(63);
     color: $color-main-2;
-    margin: 0 rem(14) 0 rem(16)
+    margin: 0 rem(14) 0 rem(16);
+
+    @include mq(md){
+      font-size: rem(33);
+      margin: 0 rem(9) 0 rem(10);
+    }
+
+    @include mq(sm){
+      font-size: rem(33);
+      margin: 0 rem(3) 0 rem(3);
+    }
   }
 
   .appeal__title p:before,
@@ -53,22 +84,28 @@
     .appeal__title p:after {
     border: solid 14px transparent;
     border-top: solid 14px #fff;
-    margin-top: -5px;
+    margin-top: -4px;
     }
 
-
-.appeal__cards{
-  padding-bottom: rem(135);
-}
 
 .appeal__cards--inner{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   // align-content: center;
 
-  max-width: rem(1060);
+  max-width: rem(1170);
   width: 100%;
   margin: 0 auto;
+
+  padding-bottom: rem(135);
+
+  @include mq(md){
+    padding-bottom: rem(84);
+  }
+  @include mq(sm){
+    padding-bottom: rem(34);
+  }
 }
 
 .appeal__cards--top{
@@ -77,32 +114,34 @@
 
 .appeal__card{
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: inherit;
+
   border: rem(1) solid $color-main-2;
   border-radius: rem(18);
   background-color: #fff;
 
   max-width: rem(280);
   width: 100%;
-  // height: 100%;
-
-  // width: calc((100% / 3) - (11rem * 2 / 3));
-  // max-width: rem(280);
-
   padding: rem(11) rem(19) rem(17);
 
 
   margin-top:rem(75);
-  margin-right:rem(110);
+  margin-right:rem(55);
+  margin-left:rem(55);
+
+  @include mq(md){
+		margin-top:rem(64);
+	}
+
+  @include mq(sm){
+		margin-top:rem(53);
+	}
 
 }
-
-.appeal__card:nth-of-type(3n){
-  margin-right: 0;
-  @include mq(lg) {
-    margin-right: rem(110);
-}
-}
-
 
 .appeal__card--point{
   position: absolute;
@@ -123,12 +162,12 @@
 
 .appeal__card--title{
   font-size: rem(16);
-  font-weight: 700;
+  font-weight: bold;
   line-height: 1.4375; //rem( 23 / 16 )
   text-align: center;
 
   margin-bottom: rem(18);
-  padding: 0 rem(25);
+  padding: 0 rem(23);
 }
 
 .appeal__card--image{
