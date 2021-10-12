@@ -1,9 +1,26 @@
 .faq{
-  background-color: $color-background;
+  margin-bottom: rem(105);
+}
+
+.faq__title {
+  text-align: center;
+  font-size: rem(24);
 }
 
 .faq__wrapper {
+<<<<<<< Updated upstream
 margin: 0 auto rem(105);
+=======
+<<<<<<< HEAD
+margin: 0 auto;
+padding: rem(120) auto;
+=======
+  padding-top: rem(120);
+  padding-bottom: rem(105);
+  background-color: $color-background;
+  margin: 0 auto;
+>>>>>>> 3f100aa4c1ce3bb41d3bce366fcc2a8866944aa0
+>>>>>>> Stashed changes
 }
 
 .faq__list {

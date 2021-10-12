@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>YSファクタリング</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="" />
+
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- css -->
   <link rel="stylesheet" href="./assets/css/styles.css">
-  <title>Document</title>
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script defer type="text/javascript" src="./assets/js/script.js"></script>
 </head>
 <body>
 
   <section class="voice">
-    <P>お客様の声：まるさん</P>
+    <h2 class="voice__title">お客様の声</h2>
     <div class="voice__cards inner">
       <div class="voice__card">
         <div class="voice__avatar">
           <div class="voice__avatar--name">雑貨店店長  R様</div>
-          <img src="./assets/images/グループ 118.svg" alt="">
+          <img src="/src/images/common/group118-1.svg" alt="R様の画像">
         </div>
         <div class="voice__content">
           <div class="voice__content--price">
@@ -28,6 +50,58 @@
       </div>
     </div>
   </section>
-  
-</body>
+
+  <!-- よくある質問 -->
+
+  <section class="faq">
+    <div class="faq__wrapper inner">
+      <P>よくある質問：まるさん</P>
+      <dl class="faq__list">
+        <dt class="faq__question">
+          プライバシーは守られますか？
+        </dt>
+        <dd class="faq__answer">
+          ご心配ありません。お客様のプライバシーはしっかりと守られています。契約内容に守秘義務や個人情報の取り扱いに関する項目が盛り込まれています。また、弊社内の社員教育も定期的に行っています。
+        </dd>
+      </dl>
+      <dl class="faq__list">
+        <dt class="faq__question">
+          貸金業者とは違うのですか？
+        </dt>
+        <dd class="faq__answer">
+          まったく違います。ファクタリングは、お金を貸すのではなく「債権の売買契約」を行います。企業間お取引における売掛金を償還請求権の無い契約で買取りする、決済専門商社になります。
+        </dd>
+      </dl>
+      <dl class="faq__list">
+        <dt class="faq__question">
+          金融機関（銀行・ノンバンク）の融資との違いはどこになりますか？
+        </dt>
+        <dd class="faq__answer">
+          ファクタリングは融資ではなく、債権売買が基本的な契約です。金融機関と比べ、審査が速い、資金調達成功率が高いなどの特徴があります。また、ファクタリングでは償還請求権がないことも大きな特徴です。
+        </dd>
+      </dl>
+
+      <div class="faq__footer">
+        <a href="" class="faq__button">
+          もっと詳しく
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer__inner">
+      <ul class="footer__menu--items">
+          <li class="footer__menu--item"><a href="">会社概要</a></li>
+          <li class="footer__menu--item"><a href="">プライバシーポリシー</a></li>
+      </ul>
+    </div>
+    <div class="footer__credit">
+      <p>&copy; Copyright YSファクタリング All Rights Reserved.</p>
+    </div>
+
+  </footer>
+
+  <!-- 自分で作るscript↓ -->
+  <script src="js/script.js"></script>
 </html>
