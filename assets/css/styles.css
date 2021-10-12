@@ -873,8 +873,9 @@ footer {
 }
 
 .faq__wrapper {
-  margin: 0 auto 105px;
-  margin: 0 auto 6.5625rem;
+  margin: 0 auto;
+  padding: 120px auto;
+  padding: 7.5rem auto;
 }
 
 .faq__list {
@@ -948,8 +949,8 @@ footer {
 }
 
 .faq__footer {
-  margin: 80px auto 170px;
-  margin: 5rem auto 10.625rem;
+  margin: 80px auto;
+  margin: 5rem auto;
   width: 100%;
   max-width: 292px;
   max-width: 18.25rem;

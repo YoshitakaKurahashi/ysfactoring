@@ -3,7 +3,8 @@
 }
 
 .faq__wrapper {
-margin: 0 auto rem(105);
+margin: 0 auto;
+padding: rem(120) auto;
 }
 
 .faq__list {
@@ -67,7 +68,7 @@ margin: 0 auto rem(105);
 }
 
 .faq__footer {
-  margin: rem(80) auto rem(170);
+  margin: rem(80) auto;
   width: 100%;
   max-width: rem(292);
 }
