@@ -162,14 +162,16 @@ select::-ms-expand {
   padding-bottom: 8.4375rem;
 }
 
-.appeal__cards--top,
-.appeal__cards--bottom {
+.appeal__cards--inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1060px;
+  max-width: 66.25rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .appeal__cards--top {
@@ -183,17 +185,25 @@ select::-ms-expand {
   border: 0.0625rem solid #47B45E;
   border-radius: 1.125rem;
   background-color: #fff;
-  width: 100%;
   max-width: 280px;
   max-width: 17.5rem;
+  width: 100%;
   padding: 11px 19px 17px;
   padding: 0.6875rem 1.1875rem 1.0625rem;
-  margin-right: 55px;
-  margin-right: 3.4375rem;
+  margin-top: 75px;
+  margin-top: 4.6875rem;
+  margin-right: 110px;
+  margin-right: 6.875rem;
 }
 
-.appeal__card:nth-of-type(3) {
+.appeal__card:nth-of-type(3n) {
   margin-right: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .appeal__card:nth-of-type(3n) {
+    margin-right: 6.875rem;
+  }
 }
 
 .appeal__card--point {
@@ -860,8 +870,80 @@ footer {
   line-height: 1;
 }
 
-.question {
+.faq {
   background-color: #FAFFF4;
+}
+
+.faq__wrapper {
+  margin: 0 auto;
+}
+
+.faq__list {
+  width: 100%;
+  max-width: 712px;
+  max-width: 44.5rem;
+  margin: 50px auto 25px;
+  padding: 25px 27px 25px 34px;
+  padding: 1.5625rem 1.6875rem 1.5625rem 2.125rem;
+  background-color: #fff;
+  border-radius: 0.75rem;
+  -webkit-box-shadow: 2px 2px 2px rgba(17, 17, 17, .1);
+          box-shadow: 2px 2px 2px rgba(17, 17, 17, .1);
+}
+
+.faq__question {
+  color: #47B45E;
+  font-weight: bold;
+  padding-left: 56px;
+  padding-left: 3.5rem;
+  display: inline-block;
+  position: relative;
+}
+
+.faq__question::before {
+  content: "Q";
+  position: absolute;
+  color: #fff;
+  background-color: #19C755;
+  text-align: center;
+  padding: 0 13px;
+  padding: 0 0.8125rem;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 0.4375rem;
+}
+
+.faq__answer {
+  margin-top: 38px;
+  padding-left: 56px;
+  padding-left: 3.5rem;
+  font-size: 16px;
+  font-size: 1rem;
+  color: #2E2E2E;
+  display: inline-block;
+  position: relative;
+  line-height: 1.4375;
+}
+
+.faq__answer::before {
+  content: "A";
+  position: absolute;
+  color: #fff;
+  background-color: #FF7F00;
+  text-align: center;
+  padding: 0 13px;
+  padding: 0 0.8125rem;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  left: 0;
+  top: 0;
+  border-radius: 0.4375rem;
 }
 
 .recommendation {
@@ -1051,6 +1133,81 @@ footer {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   top: 80%;
+}
+
+.voice__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.voice__avatar {
+  widows: 100%;
+  max-width: 152px;
+  max-width: 9.5rem;
+}
+
+.voice__avatar--name {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+.voice__content {
+  max-width: 576px;
+  max-width: 36rem;
+  width: 100%;
+  font-size: 16px;
+  font-size: 1rem;
+  margin-left: 42px;
+  margin-left: 2.625rem;
+}
+
+.voice__content--price span {
+  margin-left: 45.92px;
+  margin-left: 2.87rem;
+}
+
+.voice__content--text {
+  background-color: #fff;
+  padding: 8px 20px 12px 10px;
+  border: 0.5px solid #707070;
+  border-radius: 15px;
+  margin-top: 24.992px;
+  margin-top: 1.562rem;
+  display: inline-block;
+  position: relative;
+  z-index: 20;
+}
+
+.voice__content--text::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: -15px;
+  top: 50px;
+  border-left: 1px solid #333;
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid #333;
+}
+
+.voice__content--text::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  -webkit-transform: translate(45deg);
+          transform: translate(45deg);
+  left: -50px;
+  top: 20px;
+  border-left: 30px solid transparent;
+  border-top: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #fff;
 }
 
 .sub-contact__inner {
