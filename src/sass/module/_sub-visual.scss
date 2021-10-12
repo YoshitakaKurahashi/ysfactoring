@@ -1,50 +1,86 @@
 // sub-visual
 .sub-visual {
   width: 100%;
-  background: #FAFFF4;
+  background: $color-background;
+  padding-top: rem(315);
 }
 .sub-visual__img {
   height: 960px;
   width: 100%;
-  background: url(../img/サブビュー.png) no-repeat center center / cover;
+  background: url(../images/common/sv_background-visual.png) no-repeat center center / cover;
   position: relative;
-  margin-top: 315px;
   @include mq(md) {
       height: 250px;
       width: 100%;
   }
 }
+
+.sub-visual__img::before{
+  /* 透過した黒を上から重ねるイメージ */
+  background-color: rgba(255, 255, 255, 0.4);
+  
+  /* 自由に位置指定 */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+}
+
 .sub-visual__content {
 }
 .sub-visual__1 {
-  width: 555px;
-  height: 259px;
+  width: rem(576);
+  height: auto;
   position: absolute;
-  left:20%;
-  transform: translateY(-50%);
   top: 0;
+  transform: translateY(-50%);
+  left:25%;
+
+  @include mq(sm) {
+    width: rem(179);
+   
+}
+
 }
 .sub-visual__2 {
-  width: 492px;
-  height: 186px;
+  width: rem(492);
+  height: auto;
   position: absolute;
-  left: 768px;
-  transform: translateY(-50%);
   top: 40%;
+  transform: translateY(-50%);
+  right: 11%;
+
+  @include mq(sm) {
+    width: rem(155);
+    right: 15%;
+}
+  
 }
 .sub-visual__3 {
-  width: 540px;
-  height: 222px;
+  width: rem(540);
+  height: auto;
   position: absolute;
-  left: 167px;
-  transform: translateY(-50%);
   top: 60%;
+  transform: translateY(-50%);
+  left: 11%;
+
+  @include mq(sm) {
+    width: rem(144);
+
+}
+
 }
 .sub-visual__4 {
-  width: 524px;
-  height: 186px;
+  width: rem(524);
+  height: auto;
   position: absolute;
-  left: 725px;
-  transform: translateY(-50%);
   top: 80%;
+  transform: translateY(-50%);
+  right: 12%;
+  @include mq(sm) {
+    width: rem(155);
+
+}
 }

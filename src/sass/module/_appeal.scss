@@ -7,13 +7,13 @@
   font-family: $second-font-family;
   font-weight: bold;
   padding-top: rem(58);
-  margin-bottom: rem(95);
+  margin-bottom: rem(20);
 
   text-align: center;
 
   @include mq(md){
     padding-top: rem(45);
-    margin-bottom: rem(40);
+    margin-bottom: rem(5);
   }
 
   @include mq(sm){
@@ -53,6 +53,7 @@
   
   .appeal__title--strong{
     font-size: rem(63);
+    font-family: $base-font-family;
     color: $color-main-2;
     margin: 0 rem(14) 0 rem(16);
 
