@@ -23,6 +23,7 @@
     border: 1px solid $color-main-2;
     position: relative;
     margin: rem(85) auto 0;
+    padding: 0 auto;
 }
 
 .structure__content-title {
@@ -47,7 +48,7 @@
 
 .structure__items {
     display: flex;
-    text-align: center;
+    align-items: center;
 
     @include mq('md') {
         display: block;
@@ -56,22 +57,21 @@
 
 .structure__image {
     width: 463 / 1060 * 100%;
-    margin: rem(56) rem(52) rem(51) rem(15);
+    margin: rem(56) rem(52) rem(60) rem(15);
 
     @include mq('md') {
         width: 100%;
-        margin: rem(22) rem(5) 0 rem(5);
+        margin: rem(36) 0 0;
     }
 }
 
 .structure__p {
     width: 504 / 1060 * 100%;
-    margin-top: rem(80);
 
     @include mq('md') {
-        width: rem(279);
-        margin: rem(22) rem(28);
+        width: 100%;
+        //margin-top: rem(22);
         font-size: rem(11);
-
+        padding: rem(22) rem(28);
     }
 }
