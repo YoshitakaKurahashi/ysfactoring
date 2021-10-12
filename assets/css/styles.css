@@ -975,14 +975,17 @@ footer {
   top: 80%;
 }
 
-.l-about {
-  padding: 0 25px;
-}
-
 .about__overview {
   background: #fafff4;
+  padding: 0 25px;
   padding-top: 135px;
   padding-top: 8.4375rem;
+}
+
+@media screen and (max-width: 767px) {
+  .about__overview {
+    padding-top: 3.875rem;
+  }
 }
 
 .overview__company-name {
@@ -995,6 +998,12 @@ footer {
   margin-bottom: 4.5rem;
 }
 
+@media screen and (max-width: 767px) {
+  .overview__company-name {
+    margin-bottom: 1.4375rem;
+  }
+}
+
 .contents__table {
   margin: auto;
   color: #707070;
@@ -1003,13 +1012,30 @@ footer {
   padding-right: 1.125rem;
 }
 
-.contents__table th, td {
+@media screen and (max-width: 767px) {
+  .contents__table {
+    max-width: 33.75rem;
+    width: 100%;
+  }
+}
+
+.contents__table th,
+td {
   text-align: left;
   font-size: 18px;
   font-size: 1.125rem;
   font-weight: 300;
   line-height: 1.7;
   border-bottom: 1px solid #707070;
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  .contents__table th,
+  td {
+    font-size: 0.75rem;
+    border-bottom: 1px solid #19C755;
+  }
 }
 
 .contents__table tr:not(:first-child) th,
@@ -1018,10 +1044,24 @@ footer {
   padding-top: 2.8125rem;
 }
 
+@media screen and (max-width: 767px) {
+  .contents__table tr:not(:first-child) th,
+  .contents__table tr:not(:first-child) td {
+    padding-top: 1.3125rem;
+  }
+}
+
 .contents__table tr:not(:last-child) th,
 .contents__table tr:not(:last-child) td {
   padding-bottom: 10px;
   padding-bottom: 0.625rem;
+}
+
+@media screen and (max-width: 767px) {
+  .contents__table tr:not(:last-child) th,
+  .contents__table tr:not(:last-child) td {
+    padding-bottom: 1.375rem;
+  }
 }
 
 .contents__table tr:last-child th,
@@ -1029,13 +1069,36 @@ footer {
   border-bottom: none;
 }
 
+@media screen and (max-width: 767px) {
+  .contents__table tr:last-child th,
+  .contents__table tr:last-child td {
+    padding-bottom: 1.0625rem;
+  }
+}
+
 .contents__table th {
-  width: 157px;
-  width: 9.8125rem;
+  padding-right: 49px;
+  padding-right: 3.0625rem;
+}
+
+@media screen and (max-width: 767px) {
+  .contents__table th {
+    padding-right: 1.6875rem;
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contents__table tr:first-child th,
+  .contents__table tr:first-child td {
+    border-top: 1px solid #19C755;
+    padding-top: 1.3125rem;
+  }
 }
 
 .about__basic-policy {
   background: #fafff4;
+  padding: 0 25px;
   padding-top: 97px;
   padding-top: 6.0625rem;
   padding-bottom: 79px;
@@ -1044,6 +1107,7 @@ footer {
 
 @media screen and (max-width: 767px) {
   .about__basic-policy {
+    padding-top: 1.875rem;
     background: #fff;
   }
 }
@@ -1056,6 +1120,13 @@ footer {
   margin-bottom: 28px;
   margin-bottom: 1.75rem;
   line-height: 1.45833;
+}
+
+@media screen and (max-width: 767px) {
+  .basic-policy__title {
+    font-size: 1rem;
+    margin-bottom: 0.8125rem;
+  }
 }
 
 .basic-policy__text {
@@ -1072,12 +1143,27 @@ footer {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  .basic-policy__text {
+    font-size: 0.4375rem;
+    line-height: 1.14286;
+    padding: 0.375rem 0.3125rem 0.4375rem;
+  }
 }
 
 .basic-policy__text span {
   display: block;
   margin-bottom: 10px;
   margin-bottom: 0.625rem;
+}
+
+@media screen and (max-width: 767px) {
+  .basic-policy__text span {
+    margin-bottom: 0.4375rem;
+  }
 }
 
 .pc-none {
@@ -1090,9 +1176,26 @@ footer {
   }
 }
 
+.l-about-contact {
+  padding: 0 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .l-about-contact {
+    padding: 0 20px;
+  }
+}
+
 .l-about-recommend {
   margin-bottom: 145px;
   margin-bottom: 9.0625rem;
+  padding: 0 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .l-about-recommend {
+    padding: 0 20px;
+  }
 }
 
 .sub-contact__inner {

@@ -1,6 +1,5 @@
 // aboutPageのcss
 .l-about {
-  padding: 0 $padding-pc;
 }
 
 .about {
@@ -8,7 +7,12 @@
 
 .about__overview {
   background: #fafff4;
+  padding: 0 $padding-pc;
   padding-top: rem(135);
+
+  @include mq(md) {
+    padding-top: rem(62);
+  }
 }
 
 .overview {
@@ -20,6 +24,10 @@
   line-height: (35 / 24);
   text-align: center;
   margin-bottom: rem(72);
+
+  @include mq(md) {
+    margin-bottom: rem(23);
+  }
 }
 
 .overview__contents {
@@ -30,47 +38,85 @@
   color: #707070;
   border-collapse: collapse;
   padding-right: rem(18);
+
+  @include mq(md) {
+    max-width: rem(540);
+    width: 100%;
+  }
 }
 
-.contents__table th,td {
+.contents__table th,
+td {
   text-align: left;
   font-size: rem(18);
   font-weight: $regular;
   line-height: 1.7;
   border-bottom: 1px solid #707070;
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+
+  @include mq(md) {
+    font-size: rem(12);
+    border-bottom: 1px solid $color-main;
+  }
 }
 
 .contents__table tr:not(:first-child) th,
 .contents__table tr:not(:first-child) td {
   padding-top: rem(45);
+
+  @include mq(md) {
+    padding-top: rem(21);
+  }
 }
 
 .contents__table tr:not(:last-child) th,
 .contents__table tr:not(:last-child) td {
   padding-bottom: rem(10);
+
+  @include mq(md) {
+    padding-bottom: rem(22);
+  }
 }
 
 .contents__table tr:last-child th,
 .contents__table tr:last-child td {
   border-bottom: none;
+
+  @include mq(md) {
+    padding-bottom: rem(17);
+  }
 }
 
 .contents__table th {
-  width: rem(157);
+  padding-right: rem(49);
+
+  @include mq(md) {
+    padding-right: rem(27);
+    padding-left: rem(16);
+  }
+}
+
+.contents__table tr:first-child th,
+.contents__table tr:first-child td {
+  @include mq(md) {
+    border-top: 1px solid $color-main;
+    padding-top: rem(21);
+  }
 }
 
 .about__basic-policy {
   background: #fafff4;
+  padding: 0 $padding-pc;
   padding-top: rem(97);
   padding-bottom: rem(79);
 
   @include mq(md) {
+    padding-top: rem(30);
     background: $white;
   }
 }
 
 .basic-policy {
-
 }
 
 .basic-policy__title {
@@ -79,6 +125,11 @@
   color: #2e2e2e;
   margin-bottom: rem(28);
   line-height: (35 / 24);
+
+  @include mq(md) {
+    font-size: rem(16);
+    margin-bottom: rem(13);
+  }
 }
 
 .basic-policy__text {
@@ -92,10 +143,21 @@
   margin: auto;
   font-size: rem(14);
   line-height: (24 / 14);
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+
+  @include mq(md) {
+    font-size: rem(7);
+    line-height: (8 / 7);
+    padding: rem(6) rem(5) rem(7);
+  }
 
   span {
     display: block;
     margin-bottom: rem(10);
+
+    @include mq(md) {
+      margin-bottom: rem(7);
+    }
   }
 }
 
@@ -109,11 +171,18 @@
 
 // コンタクトとオススメ内容のmarginや幅要素
 .l-about-contact {
+  padding: 0 $padding-pc;
+
+  @include mq(md) {
+    padding: 0 $padding-sp;
+  }
 }
 
 .l-about-recommend {
   margin-bottom: rem(145);
+  padding: 0 $padding-pc;
 
   @include mq(md) {
+    padding: 0 $padding-sp;
   }
 }
