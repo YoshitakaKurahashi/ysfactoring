@@ -7,7 +7,13 @@
 }
 
 .structure__head {
-    
+    font-size: rem(30);
+    font-weight: $bold;
+    text-align: center;
+
+    @include mq('md') {
+        font-size: rem(24);
+    }
 }
 
 .structure__content {
@@ -41,7 +47,7 @@
 
 .structure__items {
     display: flex;
-    
+    text-align: center;
 
     @include mq('md') {
         display: block;
@@ -60,12 +66,12 @@
 
 .structure__p {
     width: 504 / 1060 * 100%;
-    margin-top: rem(107);
+    margin-top: rem(80);
 
     @include mq('md') {
-        width: 100%;
+        width: rem(279);
         margin: rem(22) rem(28);
-        // text-align: center;
         font-size: rem(11);
+
     }
 }
