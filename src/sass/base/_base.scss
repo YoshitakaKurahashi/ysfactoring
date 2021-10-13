@@ -1,0 +1,9 @@
+h2 {
+    font-size: rem(30);
+    font-weight: $bold;
+    text-align: center;
+
+    @include mq('md') {
+        font-size: rem(24);
+    }
+}

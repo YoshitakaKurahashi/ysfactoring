@@ -5,6 +5,19 @@ body {
 }
 
 /* font-weight */
+h2 {
+  font-size: 30px;
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -490,6 +503,17 @@ select::-ms-expand {
   color: #707070;
 }
 
+.contact {
+  margin: 121px auto;
+  margin: 7.5625rem auto;
+}
+
+@media screen and (max-width: 767px) {
+  .contact {
+    margin: 0;
+  }
+}
+
 footer {
   width: 100%;
   bottom: 0;
@@ -533,6 +557,20 @@ footer {
   padding-top: 0.4375rem;
   padding-bottom: 10px;
   padding-bottom: 0.625rem;
+}
+
+.user-guide__head {
+  padding-top: 65px;
+  padding-top: 4.0625rem;
+  padding-bottom: 52px;
+  padding-bottom: 3.25rem;
+}
+
+@media screen and (max-width: 767px) {
+  .user-guide__head {
+    padding-top: 3.4375rem;
+    padding-bottom: 2.1875rem;
+  }
 }
 
 .user-guide__contents {
@@ -1354,12 +1392,19 @@ footer {
 .sub-visual {
   width: 100%;
   background: #FAFFF4;
-  padding-top: 315px;
-  padding-top: 19.6875rem;
+  padding-top: 228px;
+  padding-top: 14.25rem;
+}
+
+@media screen and (max-width: 767px) {
+  .sub-visual {
+    padding-top: 5.125rem;
+  }
 }
 
 .sub-visual__img {
   height: 960px;
+  height: 60rem;
   width: 100%;
   background: url(../images/common/sv_background-visual.png) no-repeat center center/cover;
   position: relative;
@@ -1367,7 +1412,7 @@ footer {
 
 @media screen and (max-width: 767px) {
   .sub-visual__img {
-    height: 250px;
+    height: 15.625rem;
     width: 100%;
   }
 }
@@ -1395,7 +1440,7 @@ footer {
   left: 25%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   .sub-visual__1 {
     width: 11.1875rem;
   }
@@ -1412,7 +1457,7 @@ footer {
   right: 11%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   .sub-visual__2 {
     width: 9.6875rem;
     right: 15%;
@@ -1430,7 +1475,7 @@ footer {
   left: 11%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   .sub-visual__3 {
     width: 9rem;
   }
@@ -1447,7 +1492,7 @@ footer {
   right: 12%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   .sub-visual__4 {
     width: 9.6875rem;
   }

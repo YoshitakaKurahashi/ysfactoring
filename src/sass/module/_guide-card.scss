@@ -1,3 +1,13 @@
+.user-guide__head {
+  padding-top: rem(65);
+  padding-bottom: rem(52);
+
+  @include mq(md) {
+    padding-top: rem(55);
+    padding-bottom: rem(35);
+  }
+}
+
 .user-guide__contents {
   display: flex;
   flex-wrap: wrap;

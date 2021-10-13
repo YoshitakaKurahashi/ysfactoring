@@ -2,16 +2,21 @@
 .sub-visual {
   width: 100%;
   background: $color-background;
-  padding-top: rem(315);
+  padding-top: rem(228);
+
+  @include mq(md) {
+    padding-top: rem(82);
+}
 }
 .sub-visual__img {
-  height: 960px;
+  height: rem(960);
   width: 100%;
   background: url(../images/common/sv_background-visual.png) no-repeat center center / cover;
   position: relative;
   @include mq(md) {
-      height: 250px;
+      height: rem(250);
       width: 100%;
+      
   }
 }
 
@@ -38,9 +43,8 @@
   transform: translateY(-50%);
   left:25%;
 
-  @include mq(sm) {
+  @include mq(md) {
     width: rem(179);
-   
 }
 
 }
@@ -52,7 +56,7 @@
   transform: translateY(-50%);
   right: 11%;
 
-  @include mq(sm) {
+  @include mq(md) {
     width: rem(155);
     right: 15%;
 }
@@ -66,7 +70,7 @@
   transform: translateY(-50%);
   left: 11%;
 
-  @include mq(sm) {
+  @include mq(md) {
     width: rem(144);
 
 }
@@ -79,7 +83,7 @@
   top: 80%;
   transform: translateY(-50%);
   right: 12%;
-  @include mq(sm) {
+  @include mq(md) {
     width: rem(155);
 
 }
