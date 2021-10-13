@@ -6,26 +6,33 @@ footer {
 
 }
 .footer__inner {
-
 }
 
 .footer__menu--items{
     display: flex;
     justify-content: center;
-    background: #47B45E;
-    color: #fff;
+    background: $color-main-2;
+    color: $white;
+    padding: rem(22) rem(81) rem(23);
 }
 
 .footer__menu--item{
     font-size: rem(20);
+    font-weight: lighter;
     letter-spacing: 0px;
-    padding: rem(22) rem(81) rem(23);
+    
+    &:nth-child(n + 2) {
+        margin-left: rem(100);
+    }
+>>>>>>> faq
 
     a {
+        // font-size: rem(20);
         text-decoration: none;
         display: inline-block;
-        color: #fff;
-
+        color: $white;
+        
+>>>>>>> faq
         &:hover {
             opacity: 0.5;
         }

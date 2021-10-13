@@ -3,6 +3,7 @@
 }
 
 .structure__inner {
+
     margin-top: rem(107);
     margin-bottom: rem(119);
 
@@ -10,6 +11,7 @@
         margin-top: rem(51);
         margin-bottom: rem(49);
     }
+
 }
 
 .structure__head {
@@ -73,7 +75,9 @@
 .structure__p {
     width: 504 / 1060 * 100%;
     margin-top: rem(80);
+
     text-align: left;
+
 
     @include mq('md') {
         width: rem(279);
