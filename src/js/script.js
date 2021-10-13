@@ -48,6 +48,21 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 });
 
+$(function(){
+  $('.btn-trigger').on('click', function() {
+    $(this).toggleClass('active');
+    $(".drawer-menu").fadeToggle(500);
+    return false;
+  });
+});
+
+$ (function() {
+  $(".burger-menu").on('click', function() {
+    $(".drawer-menu").fadeToggle(500);
+  });
+});
+
+
 // トップへ戻るを少しスクロールしてから表示する
 jQuery(window).on('scroll',function() {
   if (100 < jQuery(this).scrollTop()) {
@@ -56,3 +71,4 @@ jQuery(window).on('scroll',function() {
       jQuery('.to--top').removeClass('is-show');
   }
 });
+
