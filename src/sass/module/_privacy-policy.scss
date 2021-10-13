@@ -123,43 +123,126 @@
 // 貸し倒れリスクなし
 
 
-
+//footer
 footer {
     width: 100%;
     bottom: 0;
     left: 0;
-
 }
 .footer__inner {
 
 }
 
-.footer__menu--items{
+.footer__menu--items {
     display: flex;
     justify-content: center;
-    background: #47B45E;
+    background: $color-main-2;
     color: #fff;
 }
 
-.footer__menu--item{
+.footer__menu--item {
     font-size: rem(20);
     letter-spacing: 0px;
-
     padding: rem(22) rem(81) rem(23);
+
     a {
         text-decoration: none;
         display: inline-block;
         color: #fff;
-        
+        width: 100%;
+
         &:hover {
             opacity: 0.5;
         }
+        @include mq('md') {
+            font-size: rem(10);
+            padding: rem(10) rem(9) rem(9);
+        }
     }
+
+    
 }
 
-.footer__credit{
+.footer__credit p {
     text-align: center;
     font-size: rem(14);
     padding-top: rem(7);
     padding-bottom:rem(10);
+
+    @include mq('md') {
+        font-size: rem(8);
+        padding-top: rem(6);
+        padding-bottom:rem(4);
+    }
+}
+
+.to--top {
+    font-size: rem(24);
+    text-align: center;
+    line-height: rem(100);
+    background: #FFF;
+    width: rem(91);
+    height: rem(86);
+    border: rem(1) solid $color-text-orange;
+    border-radius: rem(7);
+    position: fixed;
+    right: rem(50);
+    bottom: rem(130);
+    opacity: 0;
+    visibility: hidden;
+    transition: all o.3s ease 0s;
+    z-index: 110;
+
+
+    @include mq('md') {
+        font-size: rem(10);
+        line-height: rem(45);
+        width: rem(35);
+        height: rem(35);
+        right: rem(20);
+        bottom: rem(40);
+    }
+
+    &.is-show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    a {
+        color: #2E2E2E;
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
+        position: relative;
+        display: inline-block;
+
+        &::before {
+            content: '';
+            width: rem(21);
+            height: rem(19);
+            border: 0;
+            border-top: solid rem(3) #2E2E2E;
+            border-right: solid rem(3) #2E2E2E;
+            position: absolute;
+            transform: translateY(-50%);
+            top: 15%;
+            left: 30%;
+            margin-top: rem(4);
+            transform: rotate(-45deg);
+
+            @include mq('md') {
+                width: rem(8);
+                height: rem(7);
+                border-top: solid rem(1) #2E2E2E;
+                border-right: solid rem(1) #2E2E2E;
+                top: 20%;
+                left: 30%;
+                margin-top: rem(1);
+            }
+        }
+
+        &:hover {
+            opacity: 0.5;
+        }
+
+    }
 }

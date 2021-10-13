@@ -1,3 +1,13 @@
+.guide {
+  padding-bottom: rem(105);
+
+  @include mq(md) {
+    padding-bottom: rem(37);
+    padding-left: rem(20);
+    padding-right: rem(20);
+  }
+}
+
 .user-guide__head {
   padding-top: rem(65);
   padding-bottom: rem(52);
@@ -18,7 +28,6 @@
   @include mq(md) {
     max-width: rem(375);
     width: 100%;
-    padding: 0 rem(17) 0 rem(16);
   }
 }
 
@@ -231,7 +240,9 @@
   @include mq(md) {
     max-width: rem(375);
     width: 100%;
-    padding: rem(12) rem(0) rem(22) rem(83);
+    padding: rem(13) rem(0) rem(22) rem(83);
+    margin: rem(56) auto 0;
+
   }
 
   &::before {

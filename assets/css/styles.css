@@ -780,6 +780,19 @@ footer {
   opacity: 0.5;
 }
 
+.guide {
+  padding-bottom: 105px;
+  padding-bottom: 6.5625rem;
+}
+
+@media screen and (max-width: 767px) {
+  .guide {
+    padding-bottom: 2.3125rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
 .user-guide__head {
   padding-top: 65px;
   padding-top: 4.0625rem;
@@ -810,7 +823,6 @@ footer {
   .user-guide__contents {
     max-width: 23.4375rem;
     width: 100%;
-    padding: 0 1.0625rem 0 1rem;
   }
 }
 
@@ -1030,7 +1042,8 @@ footer {
   .user-guide__required {
     max-width: 23.4375rem;
     width: 100%;
-    padding: 0.75rem 0rem 1.375rem 5.1875rem;
+    padding: 0.8125rem 0rem 1.375rem 5.1875rem;
+    margin: 3.5rem auto 0;
   }
 }
 
@@ -1478,13 +1491,21 @@ footer {
   text-decoration: none;
   display: inline-block;
   color: #fff;
+  width: 100%;
 }
 
 .footer__menu--item a:hover {
   opacity: 0.5;
 }
 
-.footer__credit {
+@media screen and (max-width: 767px) {
+  .footer__menu--item a {
+    font-size: 0.625rem;
+    padding: 0.625rem 0.5625rem 0.5625rem;
+  }
+}
+
+.footer__credit p {
   text-align: center;
   font-size: 14px;
   font-size: 0.875rem;
@@ -1492,6 +1513,103 @@ footer {
   padding-top: 0.4375rem;
   padding-bottom: 10px;
   padding-bottom: 0.625rem;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__credit p {
+    font-size: 0.5rem;
+    padding-top: 0.375rem;
+    padding-bottom: 0.25rem;
+  }
+}
+
+.to--top {
+  font-size: 24px;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 100px;
+  line-height: 6.25rem;
+  background: #FFF;
+  width: 91px;
+  width: 5.6875rem;
+  height: 86px;
+  height: 5.375rem;
+  border: 1px solid #FF7F00;
+  border: 0.0625rem solid #FF7F00;
+  border-radius: 0.4375rem;
+  position: fixed;
+  right: 50px;
+  right: 3.125rem;
+  bottom: 130px;
+  bottom: 8.125rem;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all o 0.3s ease 0s;
+  transition: all o 0.3s ease 0s;
+  z-index: 110;
+}
+
+@media screen and (max-width: 767px) {
+  .to--top {
+    font-size: 0.625rem;
+    line-height: 2.8125rem;
+    width: 2.1875rem;
+    height: 2.1875rem;
+    right: 1.25rem;
+    bottom: 2.5rem;
+  }
+}
+
+.to--top.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.to--top a {
+  color: #2E2E2E;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  display: inline-block;
+}
+
+.to--top a::before {
+  content: '';
+  width: 21px;
+  width: 1.3125rem;
+  height: 19px;
+  height: 1.1875rem;
+  border: 0;
+  border-top: solid 3px #2E2E2E;
+  border-top: solid 0.1875rem #2E2E2E;
+  border-right: solid 3px #2E2E2E;
+  border-right: solid 0.1875rem #2E2E2E;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 15%;
+  left: 30%;
+  margin-top: 4px;
+  margin-top: 0.25rem;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 767px) {
+  .to--top a::before {
+    width: 0.5rem;
+    height: 0.4375rem;
+    border-top: solid 0.0625rem #2E2E2E;
+    border-right: solid 0.0625rem #2E2E2E;
+    top: 20%;
+    left: 30%;
+    margin-top: 0.0625rem;
+  }
+}
+
+.to--top a:hover {
+  opacity: 0.5;
 }
 
 .faq {
@@ -1539,6 +1657,12 @@ footer {
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  .faq__question {
+    font-size: 0.625rem;
+  }
+}
+
 .faq__question::before {
   content: "Q";
   position: absolute;
@@ -1557,6 +1681,12 @@ footer {
   border-radius: 0.4375rem;
 }
 
+@media screen and (max-width: 767px) {
+  .faq__question::before {
+    font-size: 0.875rem;
+  }
+}
+
 .faq__answer {
   margin-top: 38px;
   padding-left: 56px;
@@ -1567,6 +1697,12 @@ footer {
   display: inline-block;
   position: relative;
   line-height: 1.4375;
+}
+
+@media screen and (max-width: 767px) {
+  .faq__answer {
+    font-size: 0.625rem;
+  }
 }
 
 .faq__answer::before {
@@ -1583,6 +1719,12 @@ footer {
   left: 0;
   top: 0;
   border-radius: 0.4375rem;
+}
+
+@media screen and (max-width: 767px) {
+  .faq__answer::before {
+    font-size: 0.875rem;
+  }
 }
 
 .faq__button {

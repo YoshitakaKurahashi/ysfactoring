@@ -35,6 +35,10 @@
   padding-left: rem(56); //56px
   display: inline-block;
   position: relative;
+
+  @include mq('md') {
+    font-size: rem(10);
+  }
   
   &::before {
     content: "Q";
@@ -50,6 +54,10 @@
     top: 50%;
     transform: translateY(-50%);
     border-radius: rem(7); //7px
+
+    @include mq('md') {
+      font-size: rem(14);
+    }
   }
 }
 
@@ -61,6 +69,10 @@
   display: inline-block;
   position: relative;
   line-height: calc( 23 / 16 );
+
+  @include mq('md') {
+    font-size: rem(10);
+  }
   
   &::before {
     content: "A";
@@ -75,6 +87,10 @@
     left: 0;
     top: 0;
     border-radius: rem(7); //7px
+
+    @include mq('md') {
+      font-size: rem(14);
+    }
   }
 }
 
