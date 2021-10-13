@@ -1642,7 +1642,7 @@ footer {
   margin-bottom: 2.0625rem;
   text-align: left;
   position: relative;
-  z-index: 100;
+  z-index: 10;
 }
 
 .recommendation__lead::before {
@@ -1663,7 +1663,7 @@ footer {
 
 .l-contact-contents {
   position: relative;
-  z-index: 100;
+  z-index: 20;
 }
 
 .structure__inner {
