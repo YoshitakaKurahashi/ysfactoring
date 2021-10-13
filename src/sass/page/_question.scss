@@ -90,7 +90,7 @@
   }
 }
 
-<<<<<<< HEAD:src/sass/module/_question.scss
+
 .faq__button {
   margin-top: rem(79);
   padding-bottom: rem(171);
@@ -126,47 +126,5 @@
         &:hover {
             opacity: 0.5;
         }
-=======
-.faq__footer {
-  margin: rem(80) auto rem(170);
-  width: 100%;
-  max-width: rem(292);
-}
-
-.faq__button {
-  color: $white;
-  background-color: $color-text-orange;
-  font-size: rem(24);
-  font-weight: bold;
-  padding: rem(13) rem(90) rem(13) rem(56); //13px 56px
-  border-radius: rem(30);
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    background: $white;
-    width: rem(15); //9px
-    height: rem(3); //3px
-    transform: rotate(45deg);
-    top: rem(25);
-    right: rem(60);
-    border-radius: 3px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    background: $white;
-    width: rem(15); //9px
-    height: rem(3); //3px
-    transform: rotate(-45deg);
-    top: rem(34);
-    right: rem(60);
-    border-radius: 3px;
-
->>>>>>> faq:src/sass/page/_question.scss
-  }
+ }
 }
