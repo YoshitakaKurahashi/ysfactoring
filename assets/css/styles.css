@@ -1246,6 +1246,20 @@ footer {
   z-index: 100;
 }
 
+.structure__inner {
+  margin-top: 107px;
+  margin-top: 6.6875rem;
+  margin-bottom: 119px;
+  margin-bottom: 7.4375rem;
+}
+
+@media screen and (max-width: 767px) {
+  .structure__inner {
+    margin-top: 3.1875rem;
+    margin-bottom: 3.0625rem;
+  }
+}
+
 .structure__head {
   font-size: 30px;
   font-size: 1.875rem;
@@ -1326,6 +1340,7 @@ footer {
   width: 47.54717%;
   margin-top: 80px;
   margin-top: 5rem;
+  text-align: left;
 }
 
 @media screen and (max-width: 767px) {
