@@ -1249,6 +1249,21 @@ footer {
   margin: 0 auto;
 }
 
+.faq__title {
+  font-size: 30px;
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 121px;
+  padding-top: 7.5625rem;
+}
+
+@media screen and (max-width: 767px) {
+  .faq__title {
+    font-size: 1.5rem;
+  }
+}
+
 .faq__list {
   width: 100%;
   max-width: 712px;
@@ -1320,11 +1335,15 @@ footer {
 .faq__button {
   margin-top: 79px;
   margin-top: 4.9375rem;
+  padding-bottom: 171px;
+  padding-bottom: 10.6875rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 767px) {
   .faq__button {
     margin-top: 2.375rem;
+    padding-bottom: 2.25rem;
   }
 }
 
@@ -1334,10 +1353,11 @@ footer {
   width: 18.25rem;
   height: 60px;
   height: 3.75rem;
+  line-height: 60px;
+  line-height: 3.75rem;
   font-size: 24px;
   font-size: 1.5rem;
   font-weight: 700;
-  text-align: center;
   color: #fff;
   background: #FF7F00;
   border-radius: 1.875rem;
@@ -1350,6 +1370,7 @@ footer {
   .faq__button a {
     width: 7.9375rem;
     height: 1.625rem;
+    line-height: 1.625rem;
     font-size: 0.625rem;
   }
 }
