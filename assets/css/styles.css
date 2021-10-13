@@ -445,6 +445,14 @@ footer {
   padding: 1.375rem 5.0625rem 1.4375rem;
 }
 
+<<<<<<< Updated upstream
+=======
+.footer__menu--item:nth-child(n + 2) {
+  margin-left: 100px;
+  margin-left: 6.25rem;
+}
+
+>>>>>>> Stashed changes
 .footer__menu--item a {
   text-decoration: none;
   display: inline-block;
@@ -1104,7 +1112,334 @@ footer {
   left: 167px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+<<<<<<< Updated upstream
   top: 60%;
+=======
+  right: 12%;
+}
+
+@media screen and (max-width: 767px) {
+  .sub-visual__4 {
+    width: 9.6875rem;
+  }
+}
+
+.voice__title {
+  margin-top: 108px;
+  margin-top: 6.75rem;
+  text-align: center;
+}
+
+.voice__cards {
+  display: block;
+}
+
+.voice__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.voice__avatar {
+  widows: 100%;
+  max-width: 152px;
+  max-width: 9.5rem;
+}
+
+.voice__avatar--name {
+  font-size: 16px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.voice__content {
+  max-width: 576px;
+  max-width: 36rem;
+  width: 100%;
+  font-size: 16px;
+  font-size: 1rem;
+  margin-left: 42px;
+  margin-left: 2.625rem;
+}
+
+.voice__content--price {
+  max-width: 200px;
+  max-width: 12.5rem;
+  width: 100%;
+  padding-left: 8px;
+  padding-left: 0.5rem;
+  padding-bottom: 5px;
+  padding-bottom: 0.3125rem;
+  border-bottom: 1px solid #47B45E;
+}
+
+.voice__content--price span {
+  margin-left: 45px;
+  margin-left: 2.8125rem;
+}
+
+.voice__content--text {
+  background-color: #fff;
+  padding: 8px 20px 12px 10px;
+  border: 0.5px solid #707070;
+  border-radius: 15px;
+  margin-top: 24.992px;
+  margin-top: 1.562rem;
+  display: inline-block;
+  position: relative;
+  z-index: 20;
+}
+
+.voice__content--text::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  left: -27px;
+  left: -1.6875rem;
+  bottom: 14px;
+  bottom: 0.875rem;
+  border-left: 22px solid transparent;
+  border-top: 22px solid transparent;
+  border-right: 22px solid transparent;
+  border-bottom: 22px solid #111;
+}
+
+.voice__content--text::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  left: -27px;
+  left: -1.6875rem;
+  bottom: 15px;
+  bottom: 0.9375rem;
+  border-left: 23px solid transparent;
+  border-top: 23px solid transparent;
+  border-right: 23px solid transparent;
+  border-bottom: 23px solid #fff;
+}
+
+.voice--balloon {
+  position: relative;
+  z-index: 25;
+}
+
+.voice--balloon::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+  left: -46px;
+  left: -2.875rem;
+  bottom: -34px;
+  bottom: -2.125rem;
+  border-left: 20px solid transparent;
+  border-top: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #111;
+}
+
+.voice--balloon::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+  left: -46px;
+  left: -2.875rem;
+  bottom: -33px;
+  bottom: -2.0625rem;
+  border-left: 19px solid transparent;
+  border-top: 20px solid transparent;
+  border-right: 19px solid transparent;
+  border-bottom: 19px solid #fff;
+}
+
+.about__overview {
+  background: #fafff4;
+  padding: 0 25px;
+  padding-top: 135px;
+  padding-top: 8.4375rem;
+}
+
+@media screen and (max-width: 767px) {
+  .about__overview {
+    padding-top: 3.875rem;
+  }
+}
+
+.overview__company-name {
+  color: #2e2e2e;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.45833;
+  text-align: center;
+  margin-bottom: 72px;
+  margin-bottom: 4.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .overview__company-name {
+    margin-bottom: 1.4375rem;
+  }
+}
+
+.contents__table {
+  margin: auto;
+  color: #707070;
+  border-collapse: collapse;
+  padding-right: 18px;
+  padding-right: 1.125rem;
+}
+
+@media screen and (max-width: 767px) {
+  .contents__table {
+    max-width: 33.75rem;
+    width: 100%;
+  }
+}
+
+.contents__table th,
+td {
+  text-align: left;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.7;
+  border-bottom: 1px solid #707070;
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  .contents__table th,
+  td {
+    font-size: 0.75rem;
+    border-bottom: 1px solid #19C755;
+  }
+}
+
+.contents__table tr:not(:first-child) th,
+.contents__table tr:not(:first-child) td {
+  padding-top: 45px;
+  padding-top: 2.8125rem;
+}
+
+@media screen and (max-width: 767px) {
+  .contents__table tr:not(:first-child) th,
+  .contents__table tr:not(:first-child) td {
+    padding-top: 1.3125rem;
+  }
+}
+
+.contents__table tr:not(:last-child) th,
+.contents__table tr:not(:last-child) td {
+  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
+}
+
+@media screen and (max-width: 767px) {
+  .contents__table tr:not(:last-child) th,
+  .contents__table tr:not(:last-child) td {
+    padding-bottom: 1.375rem;
+  }
+}
+
+.contents__table tr:last-child th,
+.contents__table tr:last-child td {
+  border-bottom: none;
+}
+
+@media screen and (max-width: 767px) {
+  .contents__table tr:last-child th,
+  .contents__table tr:last-child td {
+    padding-bottom: 1.0625rem;
+  }
+}
+
+.contents__table th {
+  padding-right: 49px;
+  padding-right: 3.0625rem;
+}
+
+@media screen and (max-width: 767px) {
+  .contents__table th {
+    padding-right: 1.6875rem;
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contents__table tr:first-child th,
+  .contents__table tr:first-child td {
+    border-top: 1px solid #19C755;
+    padding-top: 1.3125rem;
+  }
+}
+
+.about__basic-policy {
+  background: #fafff4;
+  padding: 0 25px;
+  padding-top: 97px;
+  padding-top: 6.0625rem;
+  padding-bottom: 79px;
+  padding-bottom: 4.9375rem;
+}
+
+@media screen and (max-width: 767px) {
+  .about__basic-policy {
+    padding-top: 1.875rem;
+    background: #fff;
+  }
+}
+
+.basic-policy__title {
+  font-size: 24px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #2e2e2e;
+  margin-bottom: 28px;
+  margin-bottom: 1.75rem;
+  line-height: 1.45833;
+}
+
+@media screen and (max-width: 767px) {
+  .basic-policy__title {
+    font-size: 1rem;
+    margin-bottom: 0.8125rem;
+  }
+}
+
+.basic-policy__text {
+  border: 1px solid #707070;
+  background: #fff;
+  padding: 25px 44px;
+  padding: 1.5625rem 2.75rem;
+  text-align: left;
+  color: #707070;
+  max-width: 930px;
+  max-width: 58.125rem;
+  width: 100%;
+  margin: auto;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+>>>>>>> Stashed changes
 }
 
 .sub-visual__4 {
@@ -1348,6 +1683,166 @@ footer {
   margin-bottom: 9.0625rem;
 }
 
+<<<<<<< Updated upstream
+=======
+.faq {
+  margin-bottom: 105px;
+  margin-bottom: 6.5625rem;
+}
+
+.faq__title {
+  text-align: center;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+.faq__wrapper {
+  margin: 0 auto 105px;
+  margin: 0 auto 6.5625rem;
+  margin: 0 auto;
+  padding: 120px auto;
+  padding: 7.5rem auto;
+  padding-top: 120px;
+  padding-top: 7.5rem;
+  padding-bottom: 105px;
+  padding-bottom: 6.5625rem;
+  background-color: #FAFFF4;
+  margin: 0 auto;
+}
+
+.faq__title {
+  font-size: 30px;
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 121px;
+  padding-top: 7.5625rem;
+}
+
+@media screen and (max-width: 767px) {
+  .faq__title {
+    font-size: 1.5rem;
+  }
+}
+
+.faq__list {
+  width: 100%;
+  max-width: 712px;
+  max-width: 44.5rem;
+  margin: 50px auto 25px;
+  margin: 3.125rem auto 1.5625rem;
+  padding: 25px 27px 25px 34px;
+  padding: 1.5625rem 1.6875rem 1.5625rem 2.125rem;
+  background-color: #fff;
+  border-radius: 0.75rem;
+  -webkit-box-shadow: 2px 2px 2px rgba(17, 17, 17, .1);
+          box-shadow: 2px 2px 2px rgba(17, 17, 17, .1);
+}
+
+.faq__question {
+  color: #47B45E;
+  font-weight: bold;
+  padding-left: 56px;
+  padding-left: 3.5rem;
+  display: inline-block;
+  position: relative;
+}
+
+.faq__question::before {
+  content: "Q";
+  position: absolute;
+  color: #fff;
+  background-color: #19C755;
+  text-align: center;
+  padding: 0 13px;
+  padding: 0 0.8125rem;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 0.4375rem;
+}
+
+.faq__answer {
+  margin-top: 38px;
+  margin-top: 2.375rem;
+  padding-left: 56px;
+  padding-left: 3.5rem;
+  font-size: 16px;
+  font-size: 1rem;
+  color: #2E2E2E;
+  display: inline-block;
+  position: relative;
+  line-height: 1.4375;
+}
+
+.faq__answer::before {
+  content: "A";
+  position: absolute;
+  color: #fff;
+  background-color: #FF7F00;
+  text-align: center;
+  padding: 0 13px;
+  padding: 0 0.8125rem;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  left: 0;
+  top: 0;
+  border-radius: 0.4375rem;
+}
+
+.faq__button {
+  margin-top: 79px;
+  margin-top: 4.9375rem;
+  padding-bottom: 171px;
+  padding-bottom: 10.6875rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .faq__button {
+    margin-top: 2.375rem;
+    padding-bottom: 2.25rem;
+  }
+}
+
+.faq__button a {
+  display: inline-block;
+  width: 292px;
+  width: 18.25rem;
+  height: 60px;
+  height: 3.75rem;
+  line-height: 60px;
+  line-height: 3.75rem;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  background: #FF7F00;
+  border-radius: 1.875rem;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+@media screen and (max-width: 767px) {
+  .faq__button a {
+    width: 7.9375rem;
+    height: 1.625rem;
+    line-height: 1.625rem;
+    font-size: 0.625rem;
+  }
+}
+
+.faq__button a:hover {
+  opacity: 0.5;
+}
+
+>>>>>>> Stashed changes
 .test {
   padding: 10px;
   margin: 0 auto;
