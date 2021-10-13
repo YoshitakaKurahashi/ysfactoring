@@ -587,6 +587,7 @@ select::-ms-expand {
 }
 
 
+
 .contact-sp__line--img {
   width: 50px;
   width: 3.125rem;
@@ -611,6 +612,14 @@ select::-ms-expand {
   .contact {
     margin: 0;
 
+  }
+}
+
+=======
+
+@media screen and (max-width: 767px) {
+  .contact {
+    margin: 0;
   }
 }
 
