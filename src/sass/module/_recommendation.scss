@@ -22,7 +22,7 @@
   margin-bottom: rem(33);
   text-align: left;
   position: relative;
-  z-index: 100;
+  z-index: 10;
 }
 
 .recommendation__lead::before {
@@ -39,5 +39,5 @@
 
 .l-contact-contents {
   position: relative;
-  z-index: 100;
+  z-index: 20;
 }
