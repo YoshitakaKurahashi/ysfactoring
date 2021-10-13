@@ -1224,6 +1224,8 @@ footer {
   max-width: 191px;
   max-width: 11.9375rem;
   width: 100%;
+  padding-left: 8px;
+  padding-left: 0.5rem;
   padding-bottom: 5px;
   padding-bottom: 0.3125rem;
   border-bottom: 1px solid #47B45E;
