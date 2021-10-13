@@ -6,13 +6,10 @@
 
   @include mq(md) {
     display: none;
-    padding: rem(7) rem(4) rem(6);
-    border: none;
   }
 }
 
 .l-recommendation {
-  
   margin: auto;
 
 }
@@ -26,10 +23,6 @@
   text-align: left;
   position: relative;
   z-index: 100;
-
-  @include mq(md) {
-    display: none;
-  }
 }
 
 .recommendation__lead::before {
@@ -48,4 +41,3 @@
   position: relative;
   z-index: 100;
 }
-

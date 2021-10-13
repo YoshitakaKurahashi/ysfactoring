@@ -5,15 +5,12 @@
   // background: $black; //あとで消す
 
   @include mq(md) {
-    // display: none;
+    display: none;
   }
 }
 
 .contact-contents__telephone {
   margin-right: rem(27);
-  @include mq(md) {
-    display: none;
-  }
 }
 
 .telephone-info {
@@ -74,10 +71,6 @@
   display: flex;
   align-items: center;
   height: inherit;
-
-  @include mq(md) {
-    display: none;
-  }
 }
 
 .mail-info {
@@ -137,87 +130,5 @@
 }
 
 .font-gray {
-  color: #707070;
-}
-
-// SPレスポンシブ ********************
-
-.contact-contents__sp {
-  display: none;
-
-  @include mq(sm) {
-    display: block;
-  }
-}
-
-.contact-sp {
-  padding: rem(7) rem(4) rem(6);
-  display: flex;
-  justify-content: space-between;
-  font-size: rem(12);
-
-  a {
-    text-decoration: none;
-    color: $white;
-  }
-}
-
-.contact-sp__telephone {
-  background: $color-main-2;
-  border-radius: rem(14);
-  display: flex;
-  align-items: center;
-  padding: rem(11) rem(9) rem(12) rem(3);
-  margin-right: rem(4);
-}
-
-.contact-sp__telephone--img {
-  width: 33px;
-  img {
-  }
-}
-
-.contact-sp__telephone--text {
-  span {
-    display: block;
-    margin-bottom: rem(5);
-  }
-}
-
-.contact-sp__mail {
-  background: $color-accent;
-  border-radius: rem(14);
-  display: flex;
-  align-items: center;
-  padding: rem(12) rem(18) rem(11) rem(10);
-  margin-right: rem(4);
-}
-
-.contact-sp__mail--img {
-  width: 28px;
-  margin-right: rem(10);
-  img {
-  }
-}
-
-.contact-sp__mail--text {
-  span {
-    display: block;
-    margin-bottom: rem(5);
-  }
-}
-
-.contact-sp__line {
-  background: $color-main;
-  border-radius: rem(14);
-  padding: rem(0) rem(10) rem(3);
-}
-
-.contact-sp__line--img {
-  width: rem(50);
-  img {
-  }
-}
-
-.contact-sp__line--text {
+color: #707070;
 }
