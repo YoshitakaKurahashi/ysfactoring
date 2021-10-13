@@ -5,7 +5,7 @@
 @import "../setting/_breakpoints";
 
 @mixin mq($mediaquery: md) {
-  @media #{map-get($mediaquerys, $mediaquery)} {
+  @media #{ map-get($mediaquerys, $mediaquery)} {
     @content;
   }
 }
@@ -19,6 +19,6 @@
 }
 
 @function vw($window_width, $size) {
-	@return $size / $window_width * 100vw;
+  @return $size / $window_width * 100vw;
 }
 

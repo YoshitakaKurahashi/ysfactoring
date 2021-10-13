@@ -65,3 +65,44 @@ margin: 0 auto;
     border-radius: rem(7); //7px
   }
 }
+
+.faq__button {
+  margin-top: rem(79);
+
+  @include mq('md') {
+    margin-top: rem(38);
+  }
+
+  a {
+    display: inline-block;
+        width: rem(292);
+        // max-width: 100px;
+        height: rem(60);
+        //line-height: 72px;
+        font-size: rem(24);
+        font-weight: 700;
+        text-align: center;
+        color: $white;
+        background: $color-text-orange;
+        border-radius: rem(30);
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
+        // transitionはアニメーション　allは全てに対して、今回なら0.3sかけて
+        // easeは変化の過程(最初は速くみたいな) 最後の秒数はホバーしてからの発動時間
+
+        @include mq('md') {
+            width: rem(127);
+            height: rem(26);
+            //line-height: 60px;
+            font-size: rem(10);
+        }
+
+        &:hover {
+            opacity: 0.5;
+        }
+  }
+
+
+
+
+}
