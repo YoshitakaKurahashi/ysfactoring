@@ -586,11 +586,10 @@ select::-ms-expand {
   margin: 7.5625rem auto;
 }
 
-
-
-.contact-sp__line--img {
-  width: 50px;
-  width: 3.125rem;
+@media screen and (max-width: 767px) {
+  .contact {
+    margin: 0;
+  }
 }
 
 .drawer-menu {
@@ -607,20 +606,28 @@ select::-ms-expand {
     background: #47B45E;
     z-index: 100;
     padding-top: 7.4375rem;
-
-@media screen and (max-width: 767px) {
-  .contact {
-    margin: 0;
-
   }
 }
 
-=======
+.drawer-menu__list {
+  text-align: center;
+  max-width: 247px;
+  max-width: 15.4375rem;
+  width: 100%;
+  margin: auto;
+}
 
-@media screen and (max-width: 767px) {
-  .contact {
-    margin: 0;
-  }
+.drawer-menu__list a {
+  font-size: 14px;
+  font-size: 0.875rem;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 27px 0 8px;
+  padding: 1.6875rem 0 0.5rem;
+  line-height: 1.42857;
+  text-align: center;
+  border-bottom: 1px dashed #fff;
 }
 
 footer {
@@ -1002,6 +1009,124 @@ footer {
   .guide-card__text {
     font-size: 0.625rem;
     line-height: 1.5;
+  }
+}
+
+.user-guide__required {
+  max-width: 1110px;
+  max-width: 69.375rem;
+  width: 100%;
+  padding: 21px 147px 22px;
+  padding: 1.3125rem 9.1875rem 1.375rem;
+  background: #fff;
+  border: 1px solid #19C755;
+  margin: auto;
+  margin-top: 113px;
+  margin-top: 7.0625rem;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .user-guide__required {
+    max-width: 23.4375rem;
+    width: 100%;
+    padding: 0.75rem 0rem 1.375rem 5.1875rem;
+  }
+}
+
+.user-guide__required::before {
+  content: "必要な書類";
+  position: absolute;
+  left: 0;
+  top: -36px;
+  background: #47B45E;
+  color: #fff;
+  font-size: 20px;
+  font-size: 1.25rem;
+  width: 164px;
+  height: 36px;
+  padding-left: 22px;
+  line-height: 36px;
+  -webkit-clip-path: polygon(0% 100%, 0% 0%, 85% 0%, 100% 100%);
+          clip-path: polygon(0% 100%, 0% 0%, 85% 0%, 100% 100%);
+}
+
+@media screen and (max-width: 767px) {
+  .user-guide__required::before {
+    width: 5.9375rem;
+    height: 1.0625rem;
+    padding-left: 0.9375rem;
+    font-size: 0.75rem;
+    top: -17px;
+    line-height: 17px;
+    padding-left: 0.8125rem;
+  }
+}
+
+.required__lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .required__lists {
+    display: block;
+  }
+}
+
+.required__list {
+  display: block;
+  padding-left: 40px;
+  padding-left: 2.5rem;
+  color: #111;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .required__list {
+    font-size: 0.625rem;
+    padding-left: 1.4375rem;
+    margin-bottom: 0.625rem;
+  }
+}
+
+.required__list:nth-child(2n + 1) {
+  max-width: 365px;
+  max-width: 22.8125rem;
+  width: 100%;
+}
+
+.required__list:nth-child(1), .required__list:nth-child(2), .required__list:nth-child(3), .required__list:nth-child(4) {
+  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
+}
+
+@media screen and (max-width: 767px) {
+  .required__list:nth-child(1), .required__list:nth-child(2), .required__list:nth-child(3), .required__list:nth-child(4) {
+    margin-bottom: 0.625rem;
+  }
+}
+
+.required__list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 29px;
+  width: 1.8125rem;
+  height: 22px;
+  height: 1.375rem;
+  background: url(/assets/images/common/icon-checkbox.png) center center/cover;
+}
+
+@media screen and (max-width: 767px) {
+  .required__list::before {
+    width: 1.0625rem;
+    height: 0.8125rem;
   }
 }
 

@@ -40,7 +40,6 @@ jQuery(function ($) {
     }, time, 'swing');
     return false;
   });
-
 });
 $(function () {
   $('.btn-trigger').on('click', function () {
@@ -53,7 +52,6 @@ $(function () {
   $(".burger-menu").on('click', function () {
     $(".drawer-menu").fadeToggle(500);
   });
-
 }); // トップへ戻るを少しスクロールしてから表示する
 
 jQuery(window).on('scroll', function () {
