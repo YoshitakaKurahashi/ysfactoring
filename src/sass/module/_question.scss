@@ -130,12 +130,34 @@
         transition: all 0.3s ease 0s;
         // transitionはアニメーション allは全てに対して、今回なら0.3sかけて
         // easeは変化の過程(最初は速くみたいな) 最後の秒数はホバーしてからの発動時間
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: '';
+        top: rem(20);
+        right: rem(50);
+        width: rem(16);
+        height: rem(18);
+        border-top: rem(3) solid $white;
+        border-right: rem(3) solid $white;
+        transform: rotate(45deg);
+      }
 
         @include mq('md') {
             width: rem(127);
             height: rem(26);
             line-height: rem(26);
             font-size: rem(10);
+
+            &::after {
+              top: rem(9);
+              right: rem(21);
+              width: rem(7);
+              height: rem(7);
+              border-top: rem(1) solid $white;
+              border-right: rem(1) solid $white;
+            }
         }
 
         &:hover {
