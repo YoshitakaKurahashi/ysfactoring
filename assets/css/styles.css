@@ -1595,6 +1595,7 @@ footer {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media screen and (max-width: 767px) {
   .footer__credit p {
     font-size: 0.5rem;
@@ -1692,6 +1693,8 @@ footer {
   opacity: 0.5;
 }
 
+=======
+>>>>>>> 66a1d2bd23eb00e7b270019f22467b761e5ccc09
 =======
 >>>>>>> 66a1d2bd23eb00e7b270019f22467b761e5ccc09
 .recommendation {
@@ -2055,6 +2058,7 @@ footer {
 
 .voice__content--text::after {
   content: "";
+<<<<<<< HEAD
   position: absolute;
   width: 0;
   height: 0;
@@ -2096,10 +2100,56 @@ footer {
 
 .voice--balloon::after {
   content: "";
+=======
+>>>>>>> 66a1d2bd23eb00e7b270019f22467b761e5ccc09
   position: absolute;
   width: 0;
   height: 0;
   border-radius: 50%;
+<<<<<<< HEAD
+=======
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  left: -27px;
+  left: -1.6875rem;
+  bottom: 15px;
+  bottom: 0.9375rem;
+  border-left: 23px solid transparent;
+  border-top: 23px solid transparent;
+  border-right: 23px solid transparent;
+  border-bottom: 23px solid #fff;
+}
+
+.voice--balloon {
+  position: relative;
+  z-index: 25;
+}
+
+.voice--balloon::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+  left: -46px;
+  left: -2.875rem;
+  bottom: -34px;
+  bottom: -2.125rem;
+  border-left: 20px solid transparent;
+  border-top: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #111;
+}
+
+.voice--balloon::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+>>>>>>> 66a1d2bd23eb00e7b270019f22467b761e5ccc09
   -webkit-transform: rotate(-12deg);
           transform: rotate(-12deg);
   left: -46px;
@@ -2732,11 +2782,14 @@ td {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media screen and (max-width: 767px) {
   .faq__answer::before {
     font-size: 0.875rem;
   }
 =======
+=======
+>>>>>>> 66a1d2bd23eb00e7b270019f22467b761e5ccc09
 .faq__button {
   margin-top: 79px;
   margin-top: 4.9375rem;
@@ -2782,6 +2835,9 @@ td {
 
 .faq__button a:hover {
   opacity: 0.5;
+<<<<<<< HEAD
+>>>>>>> 66a1d2bd23eb00e7b270019f22467b761e5ccc09
+=======
 >>>>>>> 66a1d2bd23eb00e7b270019f22467b761e5ccc09
 }
 
