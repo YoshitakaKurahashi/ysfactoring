@@ -759,16 +759,13 @@ footer {
   margin-left: 6.25rem;
 }
 
-.footer__menu--item > faq
-a {
+.footer__menu--item a {
   text-decoration: none;
   display: inline-block;
   color: #fff;
 }
 
- > faq
-.footer__menu--item > faq
-a:hover {
+.footer__menu--item a:hover {
   opacity: 0.5;
 }
 

@@ -24,15 +24,12 @@ footer {
     &:nth-child(n + 2) {
         margin-left: rem(100);
     }
->>>>>>> faq
 
     a {
         // font-size: rem(20);
         text-decoration: none;
         display: inline-block;
         color: $white;
-        
->>>>>>> faq
         &:hover {
             opacity: 0.5;
         }
