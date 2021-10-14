@@ -48,7 +48,7 @@
       <li class="drawer-menu__list"><a href="">ファクタリングの仕組み</a></li><!-- /.drawer-menu__list -->
       <li class="drawer-menu__list"><a href="">ご利用案内</a></li><!-- /.drawer-menu__list -->
       <li class="drawer-menu__list"><a href="question.html">よくある質問</a></li><!-- /.drawer-menu__list -->
-      <li class="drawer-menu__list"><a href="">お問い合わせ</a></li><!-- /.drawer-menu__list -->
+      <li class="drawer-menu__list"><a href="contact.html">お問い合わせ</a></li><!-- /.drawer-menu__list -->
     </ul><!-- /.drawer-menu__lists -->
   </div><!-- /.drawer-menu -->
 
@@ -61,7 +61,7 @@
                 <li class="header__item"><a href="">ご利用案内</a></li>
                 <li class="header__item"><a href="">お客様の声</a></li>
                 <li class="header__item"><a href="question.html">よくある質問</a></li>
-                <li class="header__item"><a href="">お問い合わせ</a></li>
+                <li class="header__item"><a href="contact.html">お問い合わせ</a></li>
             </ul>
         </div>
     </header>
@@ -144,8 +144,104 @@
         </div>
       </section>
 
-    <section>
-        お問合せ
+      <section class="sub-contact">
+        <div class="l-inner sub-contact__inner">
+          <div class="sub-contact__head">
+            <h2 class="sub-contact__title">
+              お問い合わせ
+            </h2>
+            <p class="sub-contact__description">
+              ご不明な点などございましたら、お気軽にお問い合わせください。
+            </p>
+          </div>
+          
+          <form class="sub-contact__contents"  action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScCWGKEE_6FJK3zvND5-k6j8DsR6ZeipPe8n9ZwmK1N_o1XwQ/formResponse" method="post" target="hidden_iframe"
+          onsubmit="submitted=true;">
+    
+            <div class="sub-contact__content">
+              <div class="sub-contact__label">
+                <p class="">会社名</p>
+                <span class="sub-contact__required">必須</span>
+              </div>
+              <input class="sub-contact__text" type="text" name="entry.1529483970"> 
+            </div> <!--.sub-contact__content-->
+    
+            <div class="sub-contact__content">
+              <div class="sub-contact__label">
+                <p class="">会社名(かな)</p>
+                <span class="sub-contact__required">必須</span>
+              </div>
+              <input class="sub-contact__text" type="text" name="entry.593554781"> 
+            </div> <!--.sub-contact__content-->
+      
+            <div class="sub-contact__content">
+              <div class="sub-contact__label">
+                <p class="">代表者名</p>
+                <span class="sub-contact__required">必須</span>
+              </div>
+              <input class="sub-contact__text" type="name" name="entry.2005620554"> 
+            </div> <!--.sub-contact__content-->
+    
+            <div class="sub-contact__content">
+              <div class="sub-contact__label">
+                <p class="">代表者名(かな)</p>
+                <span class="sub-contact__required">必須</span>
+              </div>
+              <input class="sub-contact__text" type="name" name="entry.960717237"> 
+            </div> <!--.sub-contact__content-->
+      
+            <div class="sub-contact__content">
+              <div class="sub-contact__label">
+                <p class="">メールアドレス</p>
+                <span class="sub-contact__required">必須</span>
+              </div>
+              <input class="sub-contact__text" type="email" name="entry.1045781291"> 
+            </div> <!--.sub-contact__content-->
+      
+            <div class="sub-contact__content">
+              <div class="sub-contact__label">
+                <p class="">電話番号</p>
+                <span class="sub-contact__required">必須</span>
+              </div>
+              <input class="sub-contact__text" type="tel" name="entry.1166974658"> 
+            </div> <!--.sub-contact__content-->
+    
+            <div class="sub-contact__content">
+              <div class="sub-contact__label">
+                <p class="">ご希望金額</p>
+                <span class="sub-contact__required">必須</span>
+              </div>
+              <input class="sub-contact__text" type="text" name="entry.397805463"> 
+            </div> <!--.sub-contact__content-->
+      
+            <div class="sub-contact__content sub-contact__content--textarea">
+              <div class="sub-contact__label">
+                <p class="">お問い合わせ内容</p>
+              </div>
+              <textarea class="sub-contact__text sub-contact__text--textarea" name="entry.839337160"></textarea>
+            </div> <!--.sub-contact__content-->
+      
+            <div class="sub-contact__content sub-contact__content--check">
+                <label class="sub-contact__check--label">
+                  <input class="sub-contact__check" type="checkbox" name="entry.1463961339"><span class="sub-contact__check--text">プライバシーポリシーに同意する。</span>
+                </label>
+            
+            </div> <!--.sub-contact__content-->
+      
+            <div class="sub-contact__content  sub-contact__content--submit">
+                <input class="sub-contact__submit" type="submit" value="送信する">
+            </div> <!--.sub-contact__content-->
+          </form>
+          <script type="text/javascript">
+            var submitted = false;
+          </script>
+          <iframe
+            name="hidden_iframe"
+            id="hidden_iframe"
+            style="display: none"
+            onload="if(submitted)  {window.location='thanks.html';}"
+          ></iframe>
+    </div>
     </section>
 
     <section class="contact">
