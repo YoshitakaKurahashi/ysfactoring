@@ -1,19 +1,15 @@
 // header
 footer {
     width: 100%;
-    // bottom: 0;
-    // left: 0;
 
 }
 .footer__inner {
 }
 
-.footer__menu--items{
+.footer__menu--items {
     display: flex;
     justify-content: center;
     background: $color-main-2;
-    // color: $white;
-    // padding: rem(22) rem(81) rem(23);
 }
 
 .footer__menu--item{
@@ -48,6 +44,17 @@ footer {
         }
 
 .footer__credit {
+=======
+    color: #fff;
+}
+
+.footer__menu--item {
+    font-size: rem(20);
+    font-weight: lighter;
+    letter-spacing: 0px;
+}
+
+.footer__credit p {
     text-align: center;
     font-size: rem(14);
     padding-top: rem(7);
@@ -62,6 +69,8 @@ footer {
 
 .to--top {
     font-size: rem(24);
+    text-align: center;
+    line-height: rem(100);
     background: #FFF;
     width: rem(91);
     height: rem(86);
@@ -78,10 +87,11 @@ footer {
 
     @include mq('md') {
         font-size: rem(10);
+        line-height: rem(45);
         width: rem(35);
         height: rem(35);
         right: rem(20);
-        bottom: rem(20);
+        bottom: rem(40);
     }
 
     &.is-show {
@@ -93,22 +103,32 @@ footer {
         color: #2E2E2E;
         text-decoration: none;
         transition: all 0.3s ease 0s;
-        
         position: relative;
         display: inline-block;
 
         &::before {
             content: '';
             width: rem(21);
-            height: rem(10);
+            height: rem(19);
             border: 0;
             border-top: solid rem(3) #2E2E2E;
             border-right: solid rem(3) #2E2E2E;
             position: absolute;
-            top: 50%;
-            left: 50%;
+            transform: translateY(-50%);
+            top: 15%;
+            left: 30%;
             margin-top: rem(4);
             transform: rotate(-45deg);
+
+            @include mq('md') {
+                width: rem(8);
+                height: rem(7);
+                border-top: solid rem(1) #2E2E2E;
+                border-right: solid rem(1) #2E2E2E;
+                top: 20%;
+                left: 30%;
+                margin-top: rem(1);
+            }
         }
 
         &:hover {

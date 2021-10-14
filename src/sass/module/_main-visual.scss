@@ -29,7 +29,7 @@
   margin: rem(15) auto rem(15) rem(50);
 
   @include mq(md) {
-      width:35px;
+      width: 35px;
       margin-right: auto;
       margin-left: 0;
     }
@@ -52,6 +52,7 @@
   top: 0;
   right: 0;
 }
+
 .main-visual__nav--tel {
 
 }

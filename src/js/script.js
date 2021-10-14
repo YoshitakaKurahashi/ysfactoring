@@ -72,3 +72,14 @@ jQuery(window).on('scroll',function() {
   }
 });
 
+$(function() {
+  var nav = $('.nav');
+  //スクロールしてページトップから100に達したらクラスを付与する
+  $(window).on('load scroll',function () {
+      if ($(this).scrollTop() > 1000) {
+        nav.addClass('active');
+      } else {
+        nav.removeClass('active');
+      }
+  });
+});
