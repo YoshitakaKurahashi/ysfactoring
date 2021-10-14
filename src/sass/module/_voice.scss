@@ -3,41 +3,52 @@
 
 }
 
-.voice__cards {
+.voice__title {
+  margin-top: rem(108);
+  text-align: center;
+  
+}
 
+.voice__cards {
+  
 }
 
 .voice__card {
   display: flex;
+  margin: rem(70) auto;
 }
 
 .voice__avatar {
   widows: 100%;
-  max-width: 9.5rem;
+  max-width: rem(152); //152px
 
 }
 
 .voice__avatar--name {
-  font-size: 1rem;
+  font-size: rem(16); //16px
 }
 
 .voice__content {
-  max-width: 36rem;
+  max-width: rem(576); //576px
   width: 100%;
-  font-size: 1rem;
-  margin-left: 2.625rem;
+  font-size: rem(16);
+  margin-left: rem(42); // 42px
 }
 
 .voice__content--price {
-  
-  
+  max-width: rem(191);
+  width: 100%;
+  padding-left: rem(8);
+  padding-bottom: rem(5);
+  border-bottom: 1px solid $color-main-2;
+
   & span {
-    margin-left: 2.87rem;
+    margin-left: rem(45); //45px
   }
 }
 
 .voice__content--text { 
-  background-color: #fff;
+  background-color: $white;
   padding: 8px 20px 12px 10px;
   border: 0.5px solid #707070;
   border-radius: 15px;
@@ -48,18 +59,18 @@
 
   &::before {
     content: "";
-    // background-color: #fff;
+    background-color: #fff;
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 0;
+    height: 0;
     border-radius: 50%;
     transform: rotate( 45deg);
-    left: -15px;
-    top: 50px;
-    border-left: 1px solid #333;
-    border-top: 1px solid transparent;
-    border-right: 1px solid transparent;
-    border-bottom: 1px solid #333;
+    left: rem(-20);
+    top: rem(40);
+    border-left: 25px solid orange;
+    border-top: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid orange;
     // z-index: 10;
   }
   &::after {

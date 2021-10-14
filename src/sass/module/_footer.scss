@@ -5,7 +5,6 @@ footer {
     left: 0;
 }
 .footer__inner {
-
 }
 
 .footer__menu--items {
@@ -17,25 +16,9 @@ footer {
 
 .footer__menu--item {
     font-size: rem(20);
+    font-weight: lighter;
     letter-spacing: 0px;
-    padding: rem(22) rem(81) rem(23);
 
-    a {
-        text-decoration: none;
-        display: inline-block;
-        color: #fff;
-        width: 100%;
-
-        &:hover {
-            opacity: 0.5;
-        }
-        @include mq('md') {
-            font-size: rem(10);
-            padding: rem(10) rem(9) rem(9);
-        }
-    }
-
-    
 }
 
 .footer__credit p {
