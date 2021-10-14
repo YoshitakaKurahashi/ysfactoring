@@ -1,10 +1,11 @@
 .faq{
+  background-color: $color-background;
   margin-bottom: rem(105);
 }
 
 .faq__title {
   text-align: center;
-  font-size: rem(24);
+  font-size: rem(20);
 }
 
 .faq__wrapper {
@@ -100,6 +101,7 @@
     top: 0;
     border-radius: rem(7); //7px
 
+<<<<<<< HEAD
     @include mq('md') {
       font-size: rem(14);
     }
@@ -108,3 +110,43 @@
 
 
   
+=======
+
+.faq__button {
+  margin-top: rem(79);
+  padding-bottom: rem(171);
+  text-align: center;
+
+  @include mq('md') {
+    margin-top: rem(38);
+    padding-bottom: rem(36);
+  }
+
+  a {
+    display: inline-block;
+        width: rem(292);
+        height: rem(60);
+        line-height: rem(60);
+        font-size: rem(24);
+        font-weight: $bold;
+        color: $white;
+        background: $color-text-orange;
+        border-radius: rem(30);
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
+        // transitionはアニメーション　allは全てに対して、今回なら0.3sかけて
+        // easeは変化の過程(最初は速くみたいな) 最後の秒数はホバーしてからの発動時間
+
+        @include mq('md') {
+            width: rem(127);
+            height: rem(26);
+            line-height: rem(26);
+            font-size: rem(10);
+        }
+
+        &:hover {
+            opacity: 0.5;
+        }
+ }
+}
+>>>>>>> 66a1d2bd23eb00e7b270019f22467b761e5ccc09
