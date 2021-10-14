@@ -1,0 +1,268 @@
+// main-visual
+.main-visual {
+  // height: 959px;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/common/mv_background-visual.png) no-repeat center top / cover;
+  @include mq(md) {
+      height: 100vh;
+      background: url(../images/common/mv_sp_background-visual.png) no-repeat center center / cover;
+  }
+}
+
+
+.main-visual__header {
+  position: relative;
+  background: rgba(0,0,0,0);
+  // height: 100px;
+  width: 100%;
+  z-index: 10;
+}
+.main-visual__header--inner {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+.main-visual__logo{
+  display: block;
+  width: 75px;
+  margin: rem(15) auto rem(15) rem(50);
+
+  @include mq(md) {
+      width:35px;
+      margin-right: auto;
+      margin-left: 0;
+    }
+}
+
+.main-visual__logo img {
+  @include mq(md) {
+  display: block;
+  }
+}
+      
+.main-visual__nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  
+  color: #FFF;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.main-visual__nav--tel {
+
+}
+.main-visual__nav--mail {
+  width: rem(150);
+  background-color: $color-accent;
+  text-align: center;
+
+  img{
+    padding: rem(17) rem(54) 0;
+  }
+  p {
+      font-size: rem(16);
+      padding-bottom: rem(9);
+      letter-spacing: 1;
+      line-height: 1; //rem(22 / 16)
+  }
+}
+.main-visual__nav--line {
+  width: rem(100);
+  background-color: $color-main;
+  text-align: center;
+
+  img{
+    padding: rem(14) rem(26) rem(11) rem(24);
+  }
+  p {
+    font-size: rem(16);
+    padding-bottom: rem(9);
+    letter-spacing: 1;
+    line-height: 1; //rem(22 / 16)
+  }
+}
+
+/*
+main-visual__main
+*/
+
+.main-visual__main{
+}
+
+.main-visual__content{
+  // background-color: red;
+  margin-top: 4vh;
+  margin-left: 8vw;
+
+  @include mq(md){
+    margin: 0;
+  }
+
+}
+
+.main-visual__medal{
+  position: relative;
+  width: rem(170);
+  z-index: 10;
+
+  @include mq(md){
+    margin-top: 4vh;
+    margin-left: 4vw;
+
+    width: rem(138);
+  }
+
+  @include mq(sm){
+    margin-top: 2vh;
+    margin-left: 4vw;
+    width: rem(106);
+  }
+
+}
+
+.main-visual__main-copy{
+  background-color: #fff;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .2);
+  max-width: rem(850);
+  width: 100%;
+  height: auto;
+  transform: skewX(5deg) rotateZ(-3deg); //並行四辺形＋傾斜
+  margin-left: -11vw;
+
+  @include mq(md){
+    transform: skewX(-3deg) rotateZ(-3deg);
+    margin-left: 0;
+    
+  }
+}
+
+.main-visual__main-copy--box{
+  transform: skewX(-5deg) ; //並行四辺形のみを相殺
+  margin-left: 16vw;
+  margin-bottom: 4vh;
+
+  padding-top: rem(15);
+  padding-right: rem(10);
+  padding-bottom: rem(15);
+
+  @include mq(md){
+    transform: skewX(3deg); //並行四辺形のみを相殺
+    margin-left: 4vw;
+    margin-top: rem(-20);
+  }
+  
+}
+
+.main-visual__main-copy--text{
+  font-family: $second-font-family;
+  font-size: rem(47);
+  color: $color-text-blue;
+  font-weight: 900;
+  line-height: 1.1;
+
+  // @include mq(md){
+  //   font-size: rem(38);
+  //   letter-spacing: normal;
+  // }
+
+  @include mq(sm){
+    font-size: rem(29);
+  }
+}
+
+.main-visual__main-copy--text-strong{
+  font-size: rem(52);
+  color: $color-text-orange-2;
+
+  // @include mq(md){
+  //   font-size: rem(43);
+  // }
+
+  @include mq(sm){
+    font-size: rem(33);
+  }
+}
+
+.main-visual__side-copy{
+
+  position: relative;
+  margin-left: 4vw;
+  @include mq(md){
+    margin-top: rem(-15);
+  }
+
+}
+
+.main-visual__side-copy--label{
+  // display: inline-block;
+  position: absolute;
+  font-family: $second-font-family;
+  font-size: rem(21);
+  color: #fff;
+  font-weight: 900;
+
+  padding:rem(4) rem(7);
+  background-color: $color-text-red;
+
+  margin-left: rem(15);
+  margin-top: rem(-20);
+
+  @include mq(md){
+    font-size: rem(15);
+    padding:rem(2) rem(3);
+    margin-top: rem(-15);
+  }
+}
+
+.main-visual__side-copy--text{
+  display: inline-block;
+  font-family: $second-font-family;
+  font-size: rem(24);
+  color: $color-text-grey;
+  font-weight: bold;
+  letter-spacing: 0.07px;
+  line-height: 1.3;
+
+  background-color: #fff;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .2);
+
+  padding:rem(26) rem(15) rem(18) rem(28);
+  margin-bottom: 8vh;
+
+  @include mq(md){
+    font-size: rem(16);
+    padding:rem(14) rem(10) rem(10) rem(10);
+  }
+}
+
+
+.main-visual__points{
+  width: rem(500);
+  margin-left: 4vw;
+
+  @include mq(md){
+    width: rem(350);
+  }
+
+  @include mq(sm){
+    width: rem(200);
+    margin-left: rem(20);
+  }
+}
+
+.u-desktop{
+  display:block;
+  @include mq(md){
+    display: none;
+  }
+}
+.u-mobile{
+  display:none;
+  @include mq(md){
+    display: block;
+  }
+}
