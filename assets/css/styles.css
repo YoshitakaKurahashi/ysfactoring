@@ -594,6 +594,9 @@ select::-ms-expand {
 @media screen and (max-width: 375px) {
   .contact-contents__sp {
     display: block;
+    position: fixed;
+    bottom: 4.375rem;
+    z-index: 110;
   }
 }
 
@@ -1372,7 +1375,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: inherit;
 }
 
 .main-visual__logo {
@@ -1564,13 +1566,17 @@ footer {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 767px) {
+  .faq__wrapper {
+    padding-top: 3.75rem;
+  }
+}
+
 .faq__title {
   font-size: 30px;
   font-size: 1.875rem;
   font-weight: 700;
   text-align: center;
-  padding-top: 121px;
-  padding-top: 7.5625rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -1682,7 +1688,6 @@ footer {
 @media screen and (max-width: 767px) {
   .faq__button {
     margin-top: 2.375rem;
-    padding-bottom: 2.25rem;
   }
 }
 
@@ -2803,6 +2808,12 @@ td {
           justify-content: center;
   margin-bottom: 61px;
   margin-bottom: 3.8125rem;
+}
+
+@media screen and (max-width: 767px) {
+  .sub-contact__content--submit {
+    margin-bottom: 5rem;
+  }
 }
 
 .sub-contact__label {
