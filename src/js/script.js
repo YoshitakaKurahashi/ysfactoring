@@ -73,6 +73,14 @@ $(window).on('scroll',function() {
   }
 });
 
+jQuery(window).on('scroll',function() {
+  if (600 < jQuery(this).scrollTop()) {
+      jQuery('.main-visual__nav--bottom').addClass('is-show');
+  } else {
+      jQuery('.main-visual__nav--bottom').removeClass('is-show');
+  }
+});
+
 $(function() {
   var nav = $('.nav');
   //スクロールしてページトップから100に達したらクラスを付与する

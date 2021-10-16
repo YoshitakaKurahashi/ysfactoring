@@ -77,11 +77,11 @@ footer {
     border-radius: rem(7);
     position: fixed;
     right: rem(50);
-    bottom: rem(130);
+    bottom: rem(230);
     opacity: 0;
     visibility: hidden;
     transition: all o.3s ease 0s;
-    z-index: 110;
+    z-index: 90;
 
 
     @include mq('md') {
@@ -134,5 +134,20 @@ footer {
             opacity: 0.5;
         }
 
+    }
+}
+
+.main-visual__nav--bottom {
+    position: fixed;
+    right: 0;
+    bottom: rem(150);
+    opacity: 0;
+    visibility: hidden;
+    height: rem(100);
+    z-index: 90;
+
+    &.is-show {
+        opacity: 1;
+        visibility: visible;
     }
 }
