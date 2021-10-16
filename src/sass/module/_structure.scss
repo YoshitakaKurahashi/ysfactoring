@@ -4,11 +4,11 @@
 
 .structure__inner {
 
-    margin-top: rem(107);
+    padding-top: rem(107);
     margin-bottom: rem(119);
 
     @include mq('md') {
-        margin-top: rem(51);
+        paddng-top: rem(51);
         margin-bottom: rem(49);
     }
 
@@ -55,6 +55,7 @@
 
 .structure__items {
     display: flex;
+    align-items: center;
     text-align: center;
 
     @include mq('md') {
@@ -74,14 +75,18 @@
 
 .structure__p {
     width: 504 / 1060 * 100%;
-    margin-top: rem(80);
 
     text-align: left;
+    padding-top: rem(49);
+    padding-right: rem(26);
+    margin-bottom: rem(66);
 
 
     @include mq('md') {
-        width: rem(279);
-        margin: rem(22) rem(28);
+        // width: rem(279);
+        width: 100%;
+        padding: rem(0) rem(28);
+        margin: rem(22) auto;
         font-size: rem(11);
     }
 }
