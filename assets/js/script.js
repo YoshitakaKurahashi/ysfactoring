@@ -41,8 +41,6 @@ jQuery(function ($) {
     return false;
   });
 });
-
-
 $(function () {
   $('.btn-trigger').on('click', function () {
     $(this).toggleClass('active');
