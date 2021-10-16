@@ -147,6 +147,9 @@
 
   @include mq(sm) {
     display: block;
+    position: fixed;
+    bottom: rem(70);
+    z-index: 110;
   }
 }
 

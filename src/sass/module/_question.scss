@@ -11,6 +11,10 @@
   padding-bottom: rem(105);
   background-color: $color-background;
   margin: 0 auto;
+
+  @include mq('md') {
+    padding-top: rem(60);
+}
 }
 
 .faq__title {
@@ -107,7 +111,6 @@
 
   @include mq('md') {
     margin-top: rem(38);
-    padding-bottom: rem(36);
   }
 
   a {

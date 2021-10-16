@@ -10,6 +10,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 
 
+
   var topBtn = $('.pagetop');
   topBtn.hide();
 

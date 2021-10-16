@@ -70,6 +70,10 @@
 .sub-contact__content--submit{
 	justify-content: center;
 	margin-bottom: rem(61);
+
+	@include mq(md) {
+		margin-bottom: rem(80);
+	}
 }
 
 
