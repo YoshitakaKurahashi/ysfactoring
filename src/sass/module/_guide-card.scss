@@ -1,5 +1,6 @@
 .guide {
   padding-bottom: rem(105);
+  background-color: $color-background;
 
   @include mq(md) {
     padding-bottom: rem(37);

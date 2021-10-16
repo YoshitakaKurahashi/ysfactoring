@@ -1,7 +1,7 @@
 .burger-menu {
   display: none;
 
-  @include mq(sm) {
+  @include mq(md) {
     display: block;
   }
 }
@@ -16,7 +16,7 @@
 
 .btn-trigger {
 
-  @include mq(sm) {
+  @include mq(md) {
     position: relative;
     width: rem(44);
     height: rem(44);
