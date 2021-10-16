@@ -44,8 +44,14 @@
   left:25%;
 
   @include mq(md) {
-    width: rem(179);
-}
+    width: rem(250);
+    left:16%;
+  }
+  
+  @include mq(sm) {
+    width: rem(172);
+    left:8%;
+  }
 
 }
 .sub-visual__2 {
@@ -57,8 +63,13 @@
   right: 11%;
 
   @include mq(md) {
+    width: rem(230);
+    right: 3%;
+  }
+
+  @include mq(sm) {
     width: rem(155);
-    right: 15%;
+    right: 11%;
 }
   
 }
@@ -71,8 +82,11 @@
   left: 11%;
 
   @include mq(md) {
+    width: rem(225);
+    left: 4%;
+  }
+  @include mq(sm) {
     width: rem(144);
-
 }
 
 }
@@ -84,7 +98,11 @@
   transform: translateY(-50%);
   right: 12%;
   @include mq(md) {
+    width: rem(230);
+    right: 8%;
+  }
+  @include mq(sm) {
     width: rem(155);
-
+    right: 5%;
 }
 }

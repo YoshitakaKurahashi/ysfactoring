@@ -7,11 +7,15 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  
 
   @include mq(md) {
       display: none;
   }
 }
+
+
+
 .header__inner {
  
 }
@@ -23,6 +27,11 @@
 .header__item {
   font-size: rem(20);
   letter-spacing: 0px;
+
+  @include mq(lg) {
+    font-size: rem(16);
+}
+
 
   a {
       text-decoration: none;
