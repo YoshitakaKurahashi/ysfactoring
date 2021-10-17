@@ -420,10 +420,12 @@ select::-ms-expand {
 .contact {
   margin: 121px auto;
   margin: 7.5625rem auto;
+  padding: 0 25px;
 }
 
 @media screen and (max-width: 767px) {
   .contact {
+    padding: 0;
     margin: 0;
   }
 }
@@ -907,6 +909,8 @@ footer {
   padding-bottom: 105px;
   padding-bottom: 6.5625rem;
   background-color: #FAFFF4;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 @media screen and (max-width: 767px) {
