@@ -2,6 +2,8 @@
   padding-top: rem(65);
   padding-bottom: rem(105);
   background-color: $color-background;
+  padding-left: $padding-pc;
+  padding-right: $padding-pc;
 
   @include mq(md) {
     padding-bottom: rem(37);

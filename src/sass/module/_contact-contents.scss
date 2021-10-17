@@ -1,7 +1,9 @@
 .contact {
   margin: rem(121) auto;
+  padding: 0 $padding-pc;
 
   @include mq('md') {
+    padding: 0;
       margin: 0;
   }
 }
