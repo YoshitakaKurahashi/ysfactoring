@@ -5,7 +5,7 @@
   height: rem(959);
   background: url(../images/common/mv_background-visual.png) no-repeat center top / cover;
   @include mq(md) {
-      // height: 100vh;
+      // height: 739px;
       background: url(../images/common/mv_sp_background-visual.png) no-repeat center center / cover;
   }
   @include mq(sm) {
@@ -25,6 +25,8 @@
 .main-visual__header--inner {
   display: flex;
   align-items: center;
+  padding-right: rem(20);
+  padding-left: rem(20);
   height: inherit;
 }
 .main-visual__logo{
@@ -137,6 +139,11 @@ main-visual__main
   transform: skewX(5deg) rotateZ(-3deg); //並行四辺形＋傾斜
   margin-left: -11vw;
 
+  @include mq(lg){
+    max-width: rem(700);
+  
+  }
+
   @include mq(md){
     transform: skewX(-3deg) rotateZ(-3deg);
     margin-left: 0;
@@ -157,6 +164,7 @@ main-visual__main
     transform: skewX(3deg); //並行四辺形のみを相殺
     margin-left: 4vw;
     margin-top: rem(-20);
+
   }
   
 }
@@ -172,9 +180,12 @@ main-visual__main
   //   font-size: rem(38);
   //   letter-spacing: normal;
   // }
+  @include mq(md){
+    font-size: rem(34);
+  }
 
   @include mq(sm){
-    font-size: rem(29);
+    font-size: rem(26);
   }
 }
 
@@ -186,8 +197,11 @@ main-visual__main
   //   font-size: rem(43);
   // }
 
+  @include mq(md){
+    font-size: rem(38);
+  }
   @include mq(sm){
-    font-size: rem(33);
+    font-size: rem(30);
   }
 }
 
@@ -249,11 +263,11 @@ main-visual__main
   margin-left: 4vw;
 
   @include mq(md){
-    width: rem(350);
+    width: rem(280);
   }
 
   @include mq(sm){
-    width: rem(200);
+    width: rem(210);
     margin-left: rem(20);
   }
 }
