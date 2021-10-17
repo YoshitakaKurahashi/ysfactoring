@@ -1579,12 +1579,6 @@ footer {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .faq__wrapper {
-    padding-top: 3.75rem;
-  }
-}
-
 .faq__title {
   margin: 120px 0;
   margin: 7.5rem 0;
