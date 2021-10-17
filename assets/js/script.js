@@ -1,6 +1,5 @@
 "use strict";
 
-<<<<<<< HEAD
 // jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 //   $("#MenuButton").click(function () {
 //     // $(".l-drawer-menu").toggleClass("is-show");
@@ -42,49 +41,6 @@
 /*************************
 ドロワーメニュー
 **************************/
-=======
-jQuery(function ($) {
-  // この中であればWordpressでも「$」が使用可能になる
-  $("#MenuButton").click(function () {
-    // $(".l-drawer-menu").toggleClass("is-show");
-    // $(".p-drawer-menu").toggleClass("is-show");
-    $(".js-drawer-open").toggleClass("open");
-    $(".drawer-menu").toggleClass("open");
-    $("html").toggleClass("is-fixed");
-  });
-  var topBtn = $('.pagetop');
-  topBtn.hide(); // ボタンの表示設定
-
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 70) {
-      // 指定px以上のスクロールでボタンを表示
-      topBtn.fadeIn();
-    } else {
-      // 画面が指定pxより上ならボタンを非表示
-      topBtn.fadeOut();
-    }
-  }); // ボタンをクリックしたらスクロールして上に戻る
-
-  topBtn.click(function () {
-    $('body,html').animate({
-      scrollTop: 0
-    }, 300, 'swing');
-    return false;
-  }); // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
-
-  $(document).on('click', 'a[href*="#"]', function () {
-    var time = 400;
-    var header = $('header').innerHeight();
-    var target = $(this.hash);
-    if (!target.length) return;
-    var targetY = target.offset().top - header;
-    $('html,body').animate({
-      scrollTop: targetY
-    }, time, 'swing');
-    return false;
-  });
-});
->>>>>>> daf316c9594ae17de75d63c74c8a61076be33a4d
 $(function () {
   $('.btn-trigger').on('click', function () {
     $(this).toggleClass('active');
@@ -101,15 +57,9 @@ $(function () {
 トップへ戻るボタン：少しスクロールしてから表示する
 **************************/
 
-<<<<<<< HEAD
 $(window).on('scroll', function () {
   if (100 < $(this).scrollTop()) {
     $('.to--top').addClass('is-show');
-=======
-jQuery(window).on('scroll', function () {
-  if (600 < jQuery(this).scrollTop()) {
-    jQuery('.to--top').addClass('is-show');
->>>>>>> daf316c9594ae17de75d63c74c8a61076be33a4d
   } else {
     $('.to--top').removeClass('is-show');
   }
