@@ -1,4 +1,12 @@
 // aboutPageのcss
+.about-header-sp {
+  display: none;
+
+  @include mq(md) {
+    display: block;
+  }
+}
+
 .l-about {
 }
 
@@ -112,6 +120,7 @@ td {
 
   @include mq(md) {
     padding-top: rem(30);
+    padding-bottom: 0;
     background: $white;
   }
 }

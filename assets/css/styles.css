@@ -2023,13 +2023,14 @@ footer {
 .main-visual__logo {
   display: block;
   width: 75px;
+  width: 4.6875rem;
   margin: 15px auto 15px 50px;
   margin: 0.9375rem auto 0.9375rem 3.125rem;
 }
 
 @media screen and (max-width: 767px) {
   .main-visual__logo {
-    width: 35px;
+    width: 2.1875rem;
     margin-right: auto;
     margin-left: 0;
   }
@@ -2049,7 +2050,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   margin-left: auto;
-  color: #FFF;
+  color: #fff;
   position: absolute;
   top: 0;
   right: 0;
@@ -2490,6 +2491,16 @@ main-visual__main
   border-bottom: 10px solid #fff;
 }
 
+.about-header-sp {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .about-header-sp {
+    display: block;
+  }
+}
+
 .about__overview {
   background: #fafff4;
   padding: 0 25px;
@@ -2623,6 +2634,7 @@ td {
 @media screen and (max-width: 767px) {
   .about__basic-policy {
     padding-top: 1.875rem;
+    padding-bottom: 0;
     background: #fff;
   }
 }
