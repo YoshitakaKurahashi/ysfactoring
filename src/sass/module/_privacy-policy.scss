@@ -1,4 +1,12 @@
 // プライバシーポリシー
+.about-header-sp {
+    display: none;
+  
+    @include mq(md) {
+      display: block;
+    }
+  }
+  
 .privacy-policy {
     background: $color-background;
 }

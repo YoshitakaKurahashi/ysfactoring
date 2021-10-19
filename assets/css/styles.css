@@ -1355,6 +1355,16 @@ footer {
 }
 
 */
+.about-header-sp {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .about-header-sp {
+    display: block;
+  }
+}
+
 .privacy-policy {
   background: #FAFFF4;
 }
