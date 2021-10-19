@@ -3,21 +3,22 @@
 }
 
 .faq__wrapper {
-  margin: 0 auto rem(105);
-  // margin: 0 auto;
-  padding: rem(120) auto;
-  padding-bottom: rem(105);
+  margin: 0 auto;
+  //padding: rem(120) auto rem(105);
+  //padding-bottom: rem(105);
   background-color: $color-background;
+  padding-top: rem(120);
+  padding-bottom: rem(120);
 
   @include mq(){
     margin-bottom: 0;
-    padding-top: rem(16);
+    padding-top: rem(62);
     padding-bottom: rem(37);
   }
 }
 
 .faq__title {
-    margin: rem(120) 0;
+    //margin: rem(120) 0;
     font-size: rem(30);
     font-weight: lighter;
     text-align: center;
@@ -123,6 +124,7 @@
 
   @include mq('md') {
     margin-top: rem(38);
+    margin-bottom: rem(50);
   }
 
   a {
