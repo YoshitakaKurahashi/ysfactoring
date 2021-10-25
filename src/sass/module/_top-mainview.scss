@@ -176,7 +176,7 @@ main-visual__main
   //   letter-spacing: normal;
   // }
   @include mq(md) {
-    font-size: rem(34);
+    font-size: rem(30);
   }
 
   @include mq(sm) {
@@ -255,7 +255,7 @@ main-visual__main
   margin-left: 4vw;
 
   @include mq(md) {
-    width: rem(280);
+    width: rem(250);
   }
 
   @include mq(sm) {
