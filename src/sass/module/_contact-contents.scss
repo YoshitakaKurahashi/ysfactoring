@@ -155,7 +155,7 @@
 .contact-contents__sp {
   display: none;
 
-  @include mq(sm) {
+  @include mq(md) {
     display: block;
     position: fixed;
     bottom: rem(70);

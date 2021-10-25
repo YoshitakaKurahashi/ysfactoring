@@ -600,7 +600,7 @@ select::-ms-expand {
   display: none;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   .contact-contents__sp {
     display: block;
     position: fixed;
