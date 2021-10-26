@@ -2965,6 +2965,7 @@ td {
 }
 
 .sub-contact__submit {
+  -webkit-appearance: none;
   background-color: #FF7F00;
   border: none;
   border-radius: 0.9375rem;
