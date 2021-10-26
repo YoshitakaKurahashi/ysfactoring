@@ -2186,11 +2186,12 @@ main-visual__main
   color: #009DFF;
   font-weight: 900;
   line-height: 1.1;
+  letter-spacing: -0.1em;
 }
 
 @media screen and (max-width: 767px) {
   .main-visual__main-copy--text {
-    font-size: 1.875rem;
+    font-size: 1.75rem;
   }
 }
 

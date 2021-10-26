@@ -29,26 +29,22 @@
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script defer type="text/javascript" src="./assets/js/script.js"></script>
 </head>
-<body>
-  <section class="about-header-sp">
 
-    <div class="main-visual__header">
-      <div class="main-visual__header--inner">
+<body>
+  <div class="main-visual__header">
+    <div class="main-visual__header--inner">
         <div>
           <h1 class="main-visual__logo">
-            <a href="/">
-              <img src="./assets/images/common/logo_company.png" alt="YSファクタリングのロゴ">
-            </a>
+              <a href="/">
+                  <img src="./assets/images/common/logo_company.png" alt="YSファクタリングのロゴ">
+              </a>
           </h1>
         </div>
-      </div>
     </div>
-    </section>
-
+  </div>
 <!-- SP時のコンタクトメニュー -->
 <div class="contact-contents__sp">
   <div class="contact-sp">
-
     <a href="tel:03-6662-4406" class="contact-sp__telephone">
       <div class="contact-sp__telephone--img"><img src="/assets/images/common/icon-tele-sp.png" alt="受話器のアイコン" /></div>
       <!-- /.contact-sp__telephone--img -->
@@ -77,7 +73,6 @@
 </div>
 <!-- /.contact-contents__sp -->
 </div><!-- /.contact-sp -->
-
     <!-- バーガーメニュー -->
     <div class="burger-menu l-burger-menu">
       <div class="btn-trigger" id="btn01">
@@ -86,7 +81,6 @@
         <span></span>
       </div>
     </div><!-- /.burger-menu -->
-  
     <!-- ドロワーメニュー -->
   <div class="drawer-menu">
     <ul class="drawer-menu__lists">
@@ -98,7 +92,6 @@
       <li class="drawer-menu__list"><a href="contact.html">お問い合わせ</a></li><!-- /.drawer-menu__list -->
     </ul><!-- /.drawer-menu__lists -->
   </div><!-- /.drawer-menu -->
-
   <header class="header__menu">
       <div class="header__inner">
           <ul class="header__items">
@@ -112,7 +105,6 @@
           </ul>
       </div>
   </header>
-
   <section class="sub-contact">
     <div class="l-inner sub-contact__inner">
       <div class="sub-contact__head">
@@ -123,7 +115,8 @@
           ご不明な点などございましたら、お気軽にお問い合わせください。
         </p>
       </div>
-      <form class="sub-contact__contents"  action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScCWGKEE_6FJK3zvND5-k6j8DsR6ZeipPe8n9ZwmK1N_o1XwQ/formResponse" method="post" >
+      <form class="sub-contact__contents"  action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScCWGKEE_6FJK3zvND5-k6j8DsR6ZeipPe8n9ZwmK1N_o1XwQ/formResponse" method="post" target="hidden_iframe"
+      onsubmit="submitted=true;">
         <div class="sub-contact__content">
           <div class="sub-contact__label">
             <p class="">会社名</p>
@@ -191,16 +184,14 @@
       <script type="text/javascript">
         var submitted = false;
       </script>
-
-<iframe
-name=“hidden_iframe”
-id=“hidden_iframe”
-style=“display: none”
-onload=“if(submitted)  {window.location=‘thanks.html’;}”
-></iframe>
+      <iframe
+        name="hidden_iframe"
+        id="hidden_iframe"
+        style="display: none;"
+        onload="if(submitted)  {window.location='thanks.html';}"
+      ></iframe>
     </div>
   </section>
-
         <!-- 貸し倒れリスクなしの箇所 -->
         <div class="recommendation l-recommendation contact__recommendation--layout">
           <div class="recommendation__lead">
@@ -238,7 +229,7 @@ onload=“if(submitted)  {window.location=‘thanks.html’;}”
             </div>
             <!-- /.contact-contents__telephone -->
             <div class="contact-contents__mail-line">
-              <a href="contact.html" class="mail-info">
+              <a href="" class="mail-info">
                 <div class="mail-info__img">
                   <img
                     src="/assets/images/common/icon_mail.png"
@@ -252,7 +243,7 @@ onload=“if(submitted)  {window.location=‘thanks.html’;}”
                 </p>
                 <!-- /.mail-info__text --> </a
               ><!-- /.mail-info -->
-              <a href="" class="line-info">
+              <a href="/" class="line-info">
                 <div class="line-info__img">
                   <img
                     src="/assets/images/common/icon_line-app_ios.png"
@@ -269,7 +260,6 @@ onload=“if(submitted)  {window.location=‘thanks.html’;}”
           <!-- /.contact-contents -->
         </div>
         <!-- /.recommendation -->
-
   <footer>
     <div class="footer__inner">
       <ul class="footer__menu--items">
@@ -280,11 +270,8 @@ onload=“if(submitted)  {window.location=‘thanks.html’;}”
     <div class="footer__credit">
       <p>&copy; Copyright YSファクタリング All Rights Reserved.</p>
     </div>
-
   </footer>
-
   <div class="to--top"><a href="#">TOP</a></div>
-
   <!-- 自分で作るscript↓ -->
   <script src="js/script.js"></script>
   </body>
