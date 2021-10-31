@@ -605,8 +605,17 @@ select::-ms-expand {
     display: block;
     position: fixed;
     bottom: 4.375rem;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all o 0.3s ease 0s;
+    transition: all o 0.3s ease 0s;
     z-index: 110;
   }
+}
+
+.contact-contents__sp.is-show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .contact-sp {
@@ -1991,6 +2000,7 @@ footer {
   .main-visual {
     height: 80vh;
     background: url(../images/common/mv_sp_background-visual.png) no-repeat center center/cover;
+    max-width: 100%;
   }
 }
 

@@ -66,6 +66,14 @@ $(function(){
 トップへ戻るボタン：少しスクロールしてから表示する
 **************************/
 $(window).on('scroll',function() {
+  if (200 < $(this).scrollTop()) {
+      $('.contact-contents__sp').addClass('is-show');
+  } else {
+      $('.contact-contents__sp').removeClass('is-show');
+  }
+});
+
+$(window).on('scroll',function() {
   if (100 < $(this).scrollTop()) {
       $('.to--top').addClass('is-show');
   } else {
