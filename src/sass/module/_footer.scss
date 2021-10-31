@@ -66,6 +66,13 @@ footer {
     }
 }
 
+.footer__nav--space {
+    @include mq('md') {
+        width: 100%;
+        height: 100px;
+    }
+}
+
 .to--top {
     font-size: rem(24);
     text-align: center;
@@ -90,7 +97,7 @@ footer {
         width: rem(35);
         height: rem(35);
         right: rem(20);
-        bottom: rem(30);
+        bottom: rem(85);
     }
 
     &.is-show {

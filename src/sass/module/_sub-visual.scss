@@ -77,7 +77,7 @@
   width: rem(540);
   height: auto;
   position: absolute;
-  top: 60%;
+  top: 70%;
   transform: translateY(-50%);
   left: 11%;
 
@@ -94,12 +94,12 @@
   width: rem(524);
   height: auto;
   position: absolute;
-  top: 80%;
+  top: 95%;
   transform: translateY(-50%);
   right: 12%;
   @include mq(md) {
     width: rem(230);
-    right: 8%;
+    right: 0%;
   }
   @include mq(sm) {
     width: rem(155);
