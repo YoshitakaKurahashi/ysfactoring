@@ -6,7 +6,7 @@
   background: url(../images/common/mv_background-visual.png) no-repeat center
     top / cover;
   @include mq(md) {
-    // height: 739px;
+    height: 100vh;
     background: url(../images/common/mv_sp_background-visual.png) no-repeat
       center center / cover;
   }
@@ -254,15 +254,15 @@ main-visual__main
 
 .main-visual__points {
   width: rem(500);
-  margin-left: 4vw;
+  margin-left: rem(21.5);
 
   @include mq(md) {
-    width: rem(250);
+    width: rem(220);
   }
 
   @include mq(sm) {
-    width: rem(210);
-    margin-left: rem(20);
+    width: rem(180);
+    margin-left: rem(10);
   }
 }
 

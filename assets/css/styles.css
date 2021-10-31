@@ -1992,6 +1992,7 @@ footer {
 
 @media screen and (max-width: 767px) {
   .main-visual {
+    height: 100vh;
     background: url(../images/common/mv_sp_background-visual.png) no-repeat center center/cover;
   }
 }
@@ -2291,19 +2292,20 @@ main-visual__main
 .main-visual__points {
   width: 500px;
   width: 31.25rem;
-  margin-left: 4vw;
+  margin-left: 21.5px;
+  margin-left: 1.34375rem;
 }
 
 @media screen and (max-width: 767px) {
   .main-visual__points {
-    width: 15.625rem;
+    width: 13.75rem;
   }
 }
 
 @media screen and (max-width: 375px) {
   .main-visual__points {
-    width: 13.125rem;
-    margin-left: 1.25rem;
+    width: 11.25rem;
+    margin-left: 0.625rem;
   }
 }
 
